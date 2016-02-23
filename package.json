@@ -1,0 +1,28 @@
+{
+  "name": "abagnale",
+  "version": "1.0.0",
+  "description": "Forge unique IDs for Refract data structure elements",
+  "main": "index.js",
+  "scripts": {
+    "test": "peasant test",
+    "cover": "peasant cover",
+    "lint": "peasant lint",
+    "peasant": "peasant",
+    "ci": "peasant -s lint test build",
+    "prepublish": "npm run ci"
+  },
+  "author": "Apiary, Inc.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/apiaryio/abagnale.git"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "glob": "^7.0.0",
+    "peasant": "^0.5.2"
+  },
+  "dependencies": {
+    "babel-runtime": "^5.0.0",
+    "slug": "^0.9.1"
+  }
+}

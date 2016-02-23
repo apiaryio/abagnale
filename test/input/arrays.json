@@ -1,0 +1,18 @@
+[
+  {
+    "element": "array",
+    "content": [
+      {
+        "element": "string"
+      },
+      {
+        "element": "array",
+        "content": [
+          {
+            "element": "number"
+          }
+        ]
+      }
+    ]
+  }
+]

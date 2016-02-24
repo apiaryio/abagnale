@@ -1,0 +1,104 @@
+[
+  {
+    "element": "object",
+    "content": [
+      {
+        "element": "member",
+        "content": {
+          "key": {
+            "element": "string",
+            "content": "name",
+            "meta": {
+              "id": "object.name-key"
+            }
+          },
+          "value": {
+            "element": "string",
+            "meta": {
+              "id": "object.name"
+            }
+          }
+        },
+        "meta": {
+          "id": "object.name-member"
+        }
+      },
+      {
+        "element": "member",
+        "content": {
+          "key": {
+            "element": "string",
+            "content": "tags",
+            "meta": {
+              "id": "object.tags-key"
+            }
+          },
+          "value": {
+            "element": "array",
+            "content": [
+              {
+                "element": "object",
+                "content": [
+                  {
+                    "element": "member",
+                    "content": {
+                      "key": {
+                        "element": "string",
+                        "content": "name",
+                        "meta": {
+                          "id": "object.tags.0.name-key"
+                        }
+                      },
+                      "value": {
+                        "element": "string",
+                        "meta": {
+                          "id": "object.tags.0.name"
+                        }
+                      }
+                    },
+                    "meta": {
+                      "id": "object.tags.0.name-member"
+                    }
+                  },
+                  {
+                    "element": "member",
+                    "content": {
+                      "key": {
+                        "element": "string",
+                        "content": "count",
+                        "meta": {
+                          "id": "object.tags.0.count-key"
+                        }
+                      },
+                      "value": {
+                        "element": "number",
+                        "meta": {
+                          "id": "object.tags.0.count"
+                        }
+                      }
+                    },
+                    "meta": {
+                      "id": "object.tags.0.count-member"
+                    }
+                  }
+                ],
+                "meta": {
+                  "id": "object.tags.0"
+                }
+              }
+            ],
+            "meta": {
+              "id": "object.tags"
+            }
+          }
+        },
+        "meta": {
+          "id": "object.tags-member"
+        }
+      }
+    ],
+    "meta": {
+      "id": "object"
+    }
+  }
+]

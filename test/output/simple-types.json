@@ -1,0 +1,37 @@
+[
+  {
+    "element": "boolean",
+    "content": true,
+    "meta": {
+      "id": "boolean"
+    }
+  },
+  {
+    "element": "string",
+    "content": "test",
+    "meta": {
+      "id": "string"
+    }
+  },
+  {
+    "element": "string",
+    "content": "another test",
+    "meta": {
+      "id": "string-2"
+    }
+  },
+  {
+    "element": "number",
+    "content": 123,
+    "meta": {
+      "id": "number"
+    }
+  },
+  {
+    "element": "number",
+    "content": 456,
+    "meta": {
+      "id": "number-2"
+    }
+  }
+]

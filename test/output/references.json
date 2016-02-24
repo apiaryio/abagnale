@@ -1,0 +1,73 @@
+[
+  {
+    "element": "object",
+    "meta": {
+      "id": "MyObject"
+    },
+    "content": [
+      {
+        "element": "member",
+        "content": {
+          "key": {
+            "element": "string",
+            "content": "name",
+            "meta": {
+              "id": "MyObject.name-key"
+            }
+          },
+          "value": {
+            "element": "SpecialString",
+            "meta": {
+              "id": "MyObject.name"
+            }
+          }
+        },
+        "meta": {
+          "id": "MyObject.name-member"
+        }
+      },
+      {
+        "element": "ref",
+        "content": {
+          "href": "IncludedObject"
+        }
+      }
+    ]
+  },
+  {
+    "element": "string",
+    "meta": {
+      "id": "SpecialString"
+    },
+    "content": "I am special"
+  },
+  {
+    "element": "object",
+    "meta": {
+      "id": "IncludedObject"
+    },
+    "content": [
+      {
+        "element": "member",
+        "content": {
+          "key": {
+            "element": "string",
+            "content": "address",
+            "meta": {
+              "id": "IncludedObject.address-key"
+            }
+          },
+          "value": {
+            "element": "string",
+            "meta": {
+              "id": "IncludedObject.address"
+            }
+          }
+        },
+        "meta": {
+          "id": "IncludedObject.address-member"
+        }
+      }
+    ]
+  }
+]

@@ -1,0 +1,22 @@
+[
+  {
+    "element": "boolean",
+    "content": true
+  },
+  {
+    "element": "string",
+    "content": "test"
+  },
+  {
+    "element": "string",
+    "content": "another test"
+  },
+  {
+    "element": "number",
+    "content": 123
+  },
+  {
+    "element": "number",
+    "content": 456
+  }
+]

@@ -1,0 +1,146 @@
+[
+  {
+    "element": "category",
+    "meta": {
+      "classes": [
+        "api"
+      ],
+      "title": "My API",
+      "id": "api"
+    },
+    "attributes": {
+      "meta": [
+        {
+          "element": "member",
+          "meta": {
+            "classes": [
+              "user"
+            ]
+          },
+          "content": {
+            "key": {
+              "element": "string",
+              "content": "FORMAT"
+            },
+            "value": {
+              "element": "string",
+              "content": "1A"
+            }
+          }
+        }
+      ]
+    },
+    "content": [
+      {
+        "element": "category",
+        "meta": {
+          "classes": [
+            "resourceGroup"
+          ],
+          "title": "",
+          "id": "api.resourcegroup"
+        },
+        "content": [
+          {
+            "element": "resource",
+            "meta": {
+              "title": "Frob",
+              "id": "api.resourcegroup.frob"
+            },
+            "attributes": {
+              "href": "/frobs"
+            },
+            "content": [
+              {
+                "element": "transition",
+                "meta": {
+                  "title": "Get a frob",
+                  "id": "api.resourcegroup.frob.get-a-frob"
+                },
+                "content": [
+                  {
+                    "element": "httpTransaction",
+                    "content": [
+                      {
+                        "element": "httpRequest",
+                        "attributes": {
+                          "method": "GET"
+                        },
+                        "content": [],
+                        "meta": {
+                          "id": "api.resourcegroup.frob.get-a-frob.httptransaction.httprequest"
+                        }
+                      },
+                      {
+                        "element": "httpResponse",
+                        "attributes": {
+                          "statusCode": "200"
+                        },
+                        "content": [
+                          {
+                            "element": "dataStructure",
+                            "content": [
+                              {
+                                "element": "object",
+                                "content": [
+                                  {
+                                    "element": "member",
+                                    "content": {
+                                      "key": {
+                                        "element": "string",
+                                        "content": "id",
+                                        "meta": {
+                                          "id": "api.resourcegroup.frob.get-a-frob.httptransaction.httpresponse.datastructure.0.id-key"
+                                        }
+                                      },
+                                      "value": {
+                                        "element": "string",
+                                        "content": "123",
+                                        "meta": {
+                                          "id": "api.resourcegroup.frob.get-a-frob.httptransaction.httpresponse.datastructure.0.id"
+                                        }
+                                      }
+                                    },
+                                    "meta": {
+                                      "id": "api.resourcegroup.frob.get-a-frob.httptransaction.httpresponse.datastructure.0.id-member"
+                                    }
+                                  }
+                                ],
+                                "meta": {
+                                  "id": "api.resourcegroup.frob.get-a-frob.httptransaction.httpresponse.datastructure.0"
+                                }
+                              }
+                            ],
+                            "meta": {
+                              "id": "api.resourcegroup.frob.get-a-frob.httptransaction.httpresponse.datastructure"
+                            }
+                          },
+                          {
+                            "element": "asset",
+                            "meta": {
+                              "classes": [
+                                "messageBodySchema"
+                              ],
+                              "id": "api.resourcegroup.frob.get-a-frob.httptransaction.httpresponse.messagebodyschema"
+                            },
+                            "content": "{\n  \"$schema\": \"http://json-schema.org/draft-04/schema#\",\n  \"type\": \"object\",\n  \"properties\": {\n    \"id\": {\n      \"type\": \"string\"\n    }\n  }\n}"
+                          }
+                        ],
+                        "meta": {
+                          "id": "api.resourcegroup.frob.get-a-frob.httptransaction.httpresponse"
+                        }
+                      }
+                    ],
+                    "meta": {
+                      "id": "api.resourcegroup.frob.get-a-frob.httptransaction"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

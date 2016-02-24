@@ -1,0 +1,30 @@
+[
+  {
+    "element": "array",
+    "content": [
+      {
+        "element": "string",
+        "meta": {
+          "id": "array.0"
+        }
+      },
+      {
+        "element": "array",
+        "content": [
+          {
+            "element": "number",
+            "meta": {
+              "id": "array.1.0"
+            }
+          }
+        ],
+        "meta": {
+          "id": "array.1"
+        }
+      }
+    ],
+    "meta": {
+      "id": "array"
+    }
+  }
+]

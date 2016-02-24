@@ -6,7 +6,7 @@
   "scripts": {
     "test": "peasant test",
     "cover": "peasant cover",
-    "coveralls": "coveralls <coverage/lcov.info",
+    "coveralls": "peasant cover && coveralls <coverage/lcov.info",
     "lint": "peasant lint",
     "peasant": "peasant",
     "ci": "peasant -s lint test build",

@@ -1,8 +1,8 @@
 {
   "name": "abagnale",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Forge unique IDs for Refract data structure elements",
-  "main": "index.js",
+  "main": "lib/abagnale.js",
   "scripts": {
     "test": "peasant test",
     "cover": "peasant cover",

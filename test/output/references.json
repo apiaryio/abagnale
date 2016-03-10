@@ -2,7 +2,7 @@
   {
     "element": "object",
     "meta": {
-      "id": "MyObject"
+      "id": "myobject"
     },
     "content": [
       {
@@ -12,18 +12,18 @@
             "element": "string",
             "content": "name",
             "meta": {
-              "id": "MyObject.name-key"
+              "id": "myobject.name-key"
             }
           },
           "value": {
             "element": "SpecialString",
             "meta": {
-              "id": "MyObject.name"
+              "id": "myobject.name"
             }
           }
         },
         "meta": {
-          "id": "MyObject.name-member"
+          "id": "myobject.name-member"
         }
       },
       {
@@ -37,14 +37,14 @@
   {
     "element": "string",
     "meta": {
-      "id": "SpecialString"
+      "id": "specialstring"
     },
     "content": "I am special"
   },
   {
     "element": "object",
     "meta": {
-      "id": "IncludedObject"
+      "id": "includedobject"
     },
     "content": [
       {
@@ -54,18 +54,18 @@
             "element": "string",
             "content": "address",
             "meta": {
-              "id": "IncludedObject.address-key"
+              "id": "includedobject.address-key"
             }
           },
           "value": {
             "element": "string",
             "meta": {
-              "id": "IncludedObject.address"
+              "id": "includedobject.address"
             }
           }
         },
         "meta": {
-          "id": "IncludedObject.address-member"
+          "id": "includedobject.address-member"
         }
       }
     ]

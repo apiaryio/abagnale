@@ -6,7 +6,9 @@ A library to forge IDs for elements in [Refract](https://github.com/refractproje
 
 Abagnale attempts to give all elements within the structure a unique ID, even for elements it does not know. It accomplishes this by crawling the element contents and looking for structures that look like other elements.
 
-See the [test output](https://github.com/apiaryio/abagnale/tree/master/test/output) directory for examples of generated IDs.
+Along with unique IDs it also attempts to give each element a unique URI fragment that is safe to use in a URL and based on the element's unique ID. This can be found in a link relation called `uri-fragment`.
+
+See the [test output](https://github.com/apiaryio/abagnale/tree/master/test/output) directory for examples of generated IDs and URI fragments.
 
 It is named after [Frank Abagnale](https://en.wikipedia.org/wiki/Frank_Abagnale), one of the most notorious tricksters ever known. He forged several fake IDs, a pilots license with which he flew over a million miles, faked being a college professor, worked as a fake chief resident pediatrician, and worked in the Louisiana State Attorney General's office with a fake degree from Harvard before being caught.
 
@@ -37,9 +39,10 @@ instance.forge(input);
 ### Available Options
 The following options can be set:
 
-Name        | Description                       | Default
------------ | --------------------------------- | -------
-`separator` | Character to denote path segments | `.`
+Name           | Description                                        | Default
+-------------- | -------------------------------------------------- | -------
+`separator`    | Character to denote path segments                  | `.`
+`uriSeparator` | Character to denote path segments in URI fragments | `/`
 
 ### Notable Missing Features
 

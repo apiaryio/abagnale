@@ -6,7 +6,16 @@
         "api"
       ],
       "title": "My API",
-      "id": "api"
+      "id": "api",
+      "links": [
+        {
+          "element": "link",
+          "content": {
+            "relation": "uri-fragment",
+            "href": "api"
+          }
+        }
+      ]
     },
     "attributes": {
       "meta": [
@@ -38,14 +47,32 @@
             "resourceGroup"
           ],
           "title": "",
-          "id": "api.resourcegroup"
+          "id": "api.resourcegroup",
+          "links": [
+            {
+              "element": "link",
+              "content": {
+                "relation": "uri-fragment",
+                "href": "api/resourcegroup"
+              }
+            }
+          ]
         },
         "content": [
           {
             "element": "resource",
             "meta": {
               "title": "Frob",
-              "id": "api.resourcegroup.frob"
+              "id": "api.resourcegroup.frob",
+              "links": [
+                {
+                  "element": "link",
+                  "content": {
+                    "relation": "uri-fragment",
+                    "href": "api/resourcegroup/frob"
+                  }
+                }
+              ]
             },
             "attributes": {
               "href": "/frobs"
@@ -55,7 +82,16 @@
                 "element": "transition",
                 "meta": {
                   "title": "Get a frob",
-                  "id": "api.resourcegroup.frob.get-a-frob"
+                  "id": "api.resourcegroup.frob.get-a-frob",
+                  "links": [
+                    {
+                      "element": "link",
+                      "content": {
+                        "relation": "uri-fragment",
+                        "href": "api/resourcegroup/frob/get-a-frob"
+                      }
+                    }
+                  ]
                 },
                 "content": [
                   {
@@ -68,7 +104,16 @@
                         },
                         "content": [],
                         "meta": {
-                          "id": "api.resourcegroup.frob.get-a-frob.httptransaction.httprequest"
+                          "id": "api.resourcegroup.frob.get-a-frob.httptransaction.httprequest",
+                          "links": [
+                            {
+                              "element": "link",
+                              "content": {
+                                "relation": "uri-fragment",
+                                "href": "api/resourcegroup/frob/get-a-frob/httptransaction/httprequest"
+                              }
+                            }
+                          ]
                         }
                       },
                       {
@@ -90,29 +135,74 @@
                                         "element": "string",
                                         "content": "id",
                                         "meta": {
-                                          "id": "api.resourcegroup.frob.get-a-frob.httptransaction.httpresponse.datastructure.0.id-key"
+                                          "id": "api.resourcegroup.frob.get-a-frob.httptransaction.httpresponse.datastructure.0.id-key",
+                                          "links": [
+                                            {
+                                              "element": "link",
+                                              "content": {
+                                                "relation": "uri-fragment",
+                                                "href": "api/resourcegroup/frob/get-a-frob/httptransaction/httpresponse/datastructure/0/id-key"
+                                              }
+                                            }
+                                          ]
                                         }
                                       },
                                       "value": {
                                         "element": "string",
                                         "content": "123",
                                         "meta": {
-                                          "id": "api.resourcegroup.frob.get-a-frob.httptransaction.httpresponse.datastructure.0.id"
+                                          "id": "api.resourcegroup.frob.get-a-frob.httptransaction.httpresponse.datastructure.0.id",
+                                          "links": [
+                                            {
+                                              "element": "link",
+                                              "content": {
+                                                "relation": "uri-fragment",
+                                                "href": "api/resourcegroup/frob/get-a-frob/httptransaction/httpresponse/datastructure/0/id"
+                                              }
+                                            }
+                                          ]
                                         }
                                       }
                                     },
                                     "meta": {
-                                      "id": "api.resourcegroup.frob.get-a-frob.httptransaction.httpresponse.datastructure.0.id-member"
+                                      "id": "api.resourcegroup.frob.get-a-frob.httptransaction.httpresponse.datastructure.0.id-member",
+                                      "links": [
+                                        {
+                                          "element": "link",
+                                          "content": {
+                                            "relation": "uri-fragment",
+                                            "href": "api/resourcegroup/frob/get-a-frob/httptransaction/httpresponse/datastructure/0/id-member"
+                                          }
+                                        }
+                                      ]
                                     }
                                   }
                                 ],
                                 "meta": {
-                                  "id": "api.resourcegroup.frob.get-a-frob.httptransaction.httpresponse.datastructure.0"
+                                  "id": "api.resourcegroup.frob.get-a-frob.httptransaction.httpresponse.datastructure.0",
+                                  "links": [
+                                    {
+                                      "element": "link",
+                                      "content": {
+                                        "relation": "uri-fragment",
+                                        "href": "api/resourcegroup/frob/get-a-frob/httptransaction/httpresponse/datastructure/0"
+                                      }
+                                    }
+                                  ]
                                 }
                               }
                             ],
                             "meta": {
-                              "id": "api.resourcegroup.frob.get-a-frob.httptransaction.httpresponse.datastructure"
+                              "id": "api.resourcegroup.frob.get-a-frob.httptransaction.httpresponse.datastructure",
+                              "links": [
+                                {
+                                  "element": "link",
+                                  "content": {
+                                    "relation": "uri-fragment",
+                                    "href": "api/resourcegroup/frob/get-a-frob/httptransaction/httpresponse/datastructure"
+                                  }
+                                }
+                              ]
                             }
                           },
                           {
@@ -121,18 +211,45 @@
                               "classes": [
                                 "messageBodySchema"
                               ],
-                              "id": "api.resourcegroup.frob.get-a-frob.httptransaction.httpresponse.messagebodyschema"
+                              "id": "api.resourcegroup.frob.get-a-frob.httptransaction.httpresponse.messagebodyschema",
+                              "links": [
+                                {
+                                  "element": "link",
+                                  "content": {
+                                    "relation": "uri-fragment",
+                                    "href": "api/resourcegroup/frob/get-a-frob/httptransaction/httpresponse/messagebodyschema"
+                                  }
+                                }
+                              ]
                             },
                             "content": "{\n  \"$schema\": \"http://json-schema.org/draft-04/schema#\",\n  \"type\": \"object\",\n  \"properties\": {\n    \"id\": {\n      \"type\": \"string\"\n    }\n  }\n}"
                           }
                         ],
                         "meta": {
-                          "id": "api.resourcegroup.frob.get-a-frob.httptransaction.httpresponse"
+                          "id": "api.resourcegroup.frob.get-a-frob.httptransaction.httpresponse",
+                          "links": [
+                            {
+                              "element": "link",
+                              "content": {
+                                "relation": "uri-fragment",
+                                "href": "api/resourcegroup/frob/get-a-frob/httptransaction/httpresponse"
+                              }
+                            }
+                          ]
                         }
                       }
                     ],
                     "meta": {
-                      "id": "api.resourcegroup.frob.get-a-frob.httptransaction"
+                      "id": "api.resourcegroup.frob.get-a-frob.httptransaction",
+                      "links": [
+                        {
+                          "element": "link",
+                          "content": {
+                            "relation": "uri-fragment",
+                            "href": "api/resourcegroup/frob/get-a-frob/httptransaction"
+                          }
+                        }
+                      ]
                     }
                   }
                 ]

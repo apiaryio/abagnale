@@ -2,7 +2,16 @@
   {
     "element": "object",
     "meta": {
-      "id": "myobject"
+      "id": "MyObject",
+      "links": [
+        {
+          "element": "link",
+          "content": {
+            "relation": "uri-fragment",
+            "href": "myobject"
+          }
+        }
+      ]
     },
     "content": [
       {
@@ -12,18 +21,45 @@
             "element": "string",
             "content": "name",
             "meta": {
-              "id": "myobject.name-key"
+              "id": "MyObject.name-key",
+              "links": [
+                {
+                  "element": "link",
+                  "content": {
+                    "relation": "uri-fragment",
+                    "href": "myobject/name-key"
+                  }
+                }
+              ]
             }
           },
           "value": {
             "element": "SpecialString",
             "meta": {
-              "id": "myobject.name"
+              "id": "MyObject.name",
+              "links": [
+                {
+                  "element": "link",
+                  "content": {
+                    "relation": "uri-fragment",
+                    "href": "myobject/name"
+                  }
+                }
+              ]
             }
           }
         },
         "meta": {
-          "id": "myobject.name-member"
+          "id": "MyObject.name-member",
+          "links": [
+            {
+              "element": "link",
+              "content": {
+                "relation": "uri-fragment",
+                "href": "myobject/name-member"
+              }
+            }
+          ]
         }
       },
       {
@@ -37,14 +73,32 @@
   {
     "element": "string",
     "meta": {
-      "id": "specialstring"
+      "id": "SpecialString",
+      "links": [
+        {
+          "element": "link",
+          "content": {
+            "relation": "uri-fragment",
+            "href": "specialstring"
+          }
+        }
+      ]
     },
     "content": "I am special"
   },
   {
     "element": "object",
     "meta": {
-      "id": "includedobject"
+      "id": "IncludedObject",
+      "links": [
+        {
+          "element": "link",
+          "content": {
+            "relation": "uri-fragment",
+            "href": "includedobject"
+          }
+        }
+      ]
     },
     "content": [
       {
@@ -54,18 +108,45 @@
             "element": "string",
             "content": "address",
             "meta": {
-              "id": "includedobject.address-key"
+              "id": "IncludedObject.address-key",
+              "links": [
+                {
+                  "element": "link",
+                  "content": {
+                    "relation": "uri-fragment",
+                    "href": "includedobject/address-key"
+                  }
+                }
+              ]
             }
           },
           "value": {
             "element": "string",
             "meta": {
-              "id": "includedobject.address"
+              "id": "IncludedObject.address",
+              "links": [
+                {
+                  "element": "link",
+                  "content": {
+                    "relation": "uri-fragment",
+                    "href": "includedobject/address"
+                  }
+                }
+              ]
             }
           }
         },
         "meta": {
-          "id": "includedobject.address-member"
+          "id": "IncludedObject.address-member",
+          "links": [
+            {
+              "element": "link",
+              "content": {
+                "relation": "uri-fragment",
+                "href": "includedobject/address-member"
+              }
+            }
+          ]
         }
       }
     ]

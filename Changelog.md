@@ -1,3 +1,7 @@
+# 1.1.0 - 2016-03-10
+
+- Revert slugifying existing element IDs as this breaks dereferencing. Instead, we now produce a new link relation called `uri-fragment` with each element that is safe to use in a URL and is based on the element's ID. Note: going from a URI fragment to an element ID requires either a search through all element link relations or a pre-built mapping of URI fragments to elements.
+
 # 1.0.1 - 2016-03-09
 
 - Slugify existing element ID to prevent spaces and invalid characters in paths.

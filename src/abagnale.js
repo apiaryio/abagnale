@@ -1,7 +1,7 @@
 // A module to forge IDs for Refract elements.
 import slug from 'slug';
 
-slug.defaults.modes.pretty.lower = true;
+slug.defaults.mode = 'rfc3986';
 
 class Abagnale {
   constructor(options) {
@@ -13,6 +13,10 @@ class Abagnale {
 
     if (this.options.separator === undefined) {
       this.options.separator = '.';
+    }
+
+    if (this.options.uriSeparator === undefined) {
+      this.options.uriSeparator = '/';
     }
 
     this.cache = {};
@@ -92,11 +96,11 @@ class Abagnale {
 
     if (refract.meta) {
       if (refract.meta.id) {
-        newPath = [slug(refract.meta.id)];
+        newPath = [refract.meta.id];
       } else if (path.length === 0 && refract.meta.classes &&
                  refract.meta.classes.length === 1) {
         // This is the first item, and it has a class name, so we use that.
-        newPath = [slug(refract.meta.classes[0])];
+        newPath = [refract.meta.classes[0]];
       }
     }
 
@@ -118,6 +122,20 @@ class Abagnale {
     }
 
     refract.meta.id = this.idForElement(path, refract);
+
+    if (!refract.meta.links) {
+      refract.meta.links = [];
+    }
+
+    refract.meta.links.push({
+      element: 'link',
+      content: {
+        relation: 'uri-fragment',
+        href: refract.meta.id.split(this.options.separator)
+                             .map((item) => slug(item))
+                             .join(this.options.uriSeparator),
+      },
+    });
 
     // Array like content containing elements?
     if (refract.content && refract.content.length && refract.content[0].element) {

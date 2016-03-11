@@ -9,18 +9,45 @@
             "element": "string",
             "content": "name",
             "meta": {
-              "id": "object.name-key"
+              "id": "object.name-key",
+              "links": [
+                {
+                  "element": "link",
+                  "content": {
+                    "relation": "uri-fragment",
+                    "href": "object/name-key"
+                  }
+                }
+              ]
             }
           },
           "value": {
             "element": "string",
             "meta": {
-              "id": "object.name"
+              "id": "object.name",
+              "links": [
+                {
+                  "element": "link",
+                  "content": {
+                    "relation": "uri-fragment",
+                    "href": "object/name"
+                  }
+                }
+              ]
             }
           }
         },
         "meta": {
-          "id": "object.name-member"
+          "id": "object.name-member",
+          "links": [
+            {
+              "element": "link",
+              "content": {
+                "relation": "uri-fragment",
+                "href": "object/name-member"
+              }
+            }
+          ]
         }
       },
       {
@@ -30,7 +57,16 @@
             "element": "string",
             "content": "tags",
             "meta": {
-              "id": "object.tags-key"
+              "id": "object.tags-key",
+              "links": [
+                {
+                  "element": "link",
+                  "content": {
+                    "relation": "uri-fragment",
+                    "href": "object/tags-key"
+                  }
+                }
+              ]
             }
           },
           "value": {
@@ -46,18 +82,45 @@
                         "element": "string",
                         "content": "name",
                         "meta": {
-                          "id": "object.tags.0.name-key"
+                          "id": "object.tags.0.name-key",
+                          "links": [
+                            {
+                              "element": "link",
+                              "content": {
+                                "relation": "uri-fragment",
+                                "href": "object/tags/0/name-key"
+                              }
+                            }
+                          ]
                         }
                       },
                       "value": {
                         "element": "string",
                         "meta": {
-                          "id": "object.tags.0.name"
+                          "id": "object.tags.0.name",
+                          "links": [
+                            {
+                              "element": "link",
+                              "content": {
+                                "relation": "uri-fragment",
+                                "href": "object/tags/0/name"
+                              }
+                            }
+                          ]
                         }
                       }
                     },
                     "meta": {
-                      "id": "object.tags.0.name-member"
+                      "id": "object.tags.0.name-member",
+                      "links": [
+                        {
+                          "element": "link",
+                          "content": {
+                            "relation": "uri-fragment",
+                            "href": "object/tags/0/name-member"
+                          }
+                        }
+                      ]
                     }
                   },
                   {
@@ -67,38 +130,101 @@
                         "element": "string",
                         "content": "count",
                         "meta": {
-                          "id": "object.tags.0.count-key"
+                          "id": "object.tags.0.count-key",
+                          "links": [
+                            {
+                              "element": "link",
+                              "content": {
+                                "relation": "uri-fragment",
+                                "href": "object/tags/0/count-key"
+                              }
+                            }
+                          ]
                         }
                       },
                       "value": {
                         "element": "number",
                         "meta": {
-                          "id": "object.tags.0.count"
+                          "id": "object.tags.0.count",
+                          "links": [
+                            {
+                              "element": "link",
+                              "content": {
+                                "relation": "uri-fragment",
+                                "href": "object/tags/0/count"
+                              }
+                            }
+                          ]
                         }
                       }
                     },
                     "meta": {
-                      "id": "object.tags.0.count-member"
+                      "id": "object.tags.0.count-member",
+                      "links": [
+                        {
+                          "element": "link",
+                          "content": {
+                            "relation": "uri-fragment",
+                            "href": "object/tags/0/count-member"
+                          }
+                        }
+                      ]
                     }
                   }
                 ],
                 "meta": {
-                  "id": "object.tags.0"
+                  "id": "object.tags.0",
+                  "links": [
+                    {
+                      "element": "link",
+                      "content": {
+                        "relation": "uri-fragment",
+                        "href": "object/tags/0"
+                      }
+                    }
+                  ]
                 }
               }
             ],
             "meta": {
-              "id": "object.tags"
+              "id": "object.tags",
+              "links": [
+                {
+                  "element": "link",
+                  "content": {
+                    "relation": "uri-fragment",
+                    "href": "object/tags"
+                  }
+                }
+              ]
             }
           }
         },
         "meta": {
-          "id": "object.tags-member"
+          "id": "object.tags-member",
+          "links": [
+            {
+              "element": "link",
+              "content": {
+                "relation": "uri-fragment",
+                "href": "object/tags-member"
+              }
+            }
+          ]
         }
       }
     ],
     "meta": {
-      "id": "object"
+      "id": "object",
+      "links": [
+        {
+          "element": "link",
+          "content": {
+            "relation": "uri-fragment",
+            "href": "object"
+          }
+        }
+      ]
     }
   }
 ]

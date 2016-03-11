@@ -3,35 +3,80 @@
     "element": "boolean",
     "content": true,
     "meta": {
-      "id": "boolean"
+      "id": "boolean",
+      "links": [
+        {
+          "element": "link",
+          "content": {
+            "relation": "uri-fragment",
+            "href": "boolean"
+          }
+        }
+      ]
     }
   },
   {
     "element": "string",
     "content": "test",
     "meta": {
-      "id": "string"
+      "id": "string",
+      "links": [
+        {
+          "element": "link",
+          "content": {
+            "relation": "uri-fragment",
+            "href": "string"
+          }
+        }
+      ]
     }
   },
   {
     "element": "string",
     "content": "another test",
     "meta": {
-      "id": "string-2"
+      "id": "string-2",
+      "links": [
+        {
+          "element": "link",
+          "content": {
+            "relation": "uri-fragment",
+            "href": "string-2"
+          }
+        }
+      ]
     }
   },
   {
     "element": "number",
     "content": 123,
     "meta": {
-      "id": "number"
+      "id": "number",
+      "links": [
+        {
+          "element": "link",
+          "content": {
+            "relation": "uri-fragment",
+            "href": "number"
+          }
+        }
+      ]
     }
   },
   {
     "element": "number",
     "content": 456,
     "meta": {
-      "id": "number-2"
+      "id": "number-2",
+      "links": [
+        {
+          "element": "link",
+          "content": {
+            "relation": "uri-fragment",
+            "href": "number-2"
+          }
+        }
+      ]
     }
   }
 ]

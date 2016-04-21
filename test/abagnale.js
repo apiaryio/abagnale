@@ -5,9 +5,9 @@ import glob from 'glob';
 import path from 'path';
 
 describe('Bad refract input data', () => {
-  it('should not crash', () => {
+  it('should handle member missing a value', () => {
     const input = [{
-      element: 'array',
+      element: 'object',
       content: [
         {
           element: 'member',
@@ -17,16 +17,51 @@ describe('Bad refract input data', () => {
             },
           },
         },
+      ],
+    }];
+
+    // This test will pass so long as no errors are thrown.
+    abagnale.forge(input, {
+      separator: '.',
+    });
+  });
+
+  it('should handle missing element', () => {
+    const input = [{
+      element: 'array',
+      content: [
+        {
+          element: 'string',
+        },
         {
           content: 'missing-element',
         },
-        {
-          element: 'string',
-          meta: {
-            classes: [null],
-          },
-        },
       ],
+    }];
+
+    // This test will pass so long as no errors are thrown.
+    abagnale.forge(input, {
+      separator: '.',
+    });
+  });
+
+  it('should handle non-string in classes', () => {
+    const input = [{
+      element: 'string',
+      meta: {
+        classes: [null],
+      },
+    }];
+
+    // This test will pass so long as no errors are thrown.
+    abagnale.forge(input, {
+      separator: '.',
+    });
+  });
+
+  it('should handle non-string in element name', () => {
+    const input = [{
+      element: null,
     }];
 
     // This test will pass so long as no errors are thrown.

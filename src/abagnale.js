@@ -145,15 +145,17 @@ class Abagnale {
       refract.meta.links = [];
     }
 
-    refract.meta.links.push({
-      element: 'link',
-      content: {
-        relation: 'uri-fragment',
-        href: refract.meta.id.split(this.options.separator)
-                             .map((item) => safeSlug(item))
-                             .join(this.options.uriSeparator),
-      },
-    });
+    if (refract.meta.id && refract.meta.id.split) {
+      refract.meta.links.push({
+        element: 'link',
+        content: {
+          relation: 'uri-fragment',
+          href: refract.meta.id.split(this.options.separator)
+                               .map((item) => safeSlug(item))
+                               .join(this.options.uriSeparator),
+        },
+      });
+    }
 
     // Array like content containing elements?
     if (refract.content && refract.content.length && refract.content[0].element) {

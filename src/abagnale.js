@@ -3,6 +3,20 @@ import slug from 'slug';
 
 slug.defaults.mode = 'rfc3986';
 
+// A safe way to slugify values. If the input is null, undefined, or
+// some other error happens downstream, we simply return `unknown`.
+function safeSlug(value) {
+  let sluggified;
+
+  try {
+    sluggified = slug(value);
+  } catch (err) {
+    sluggified = 'unknown';
+  }
+
+  return sluggified;
+}
+
 class Abagnale {
   constructor(options) {
     this.options = options;
@@ -64,22 +78,22 @@ class Abagnale {
       break;
     default:
       // Non-basic types default to the element name, e.g. `resource`.
-      key = slug(refract.element);
+      key = safeSlug(refract.element);
     }
 
     // If this is a member and the key is a string, use the key value.
     if (refract.content && refract.content.key &&
         refract.content.key.element === 'string') {
-      key = slug(refract.content.key.content);
+      key = safeSlug(refract.content.key.content);
     }
 
     // If there is a title or a *single* class name, use that instead as it
     // should contain more specific and relevant information.
     if (refract.meta) {
       if (refract.meta.title) {
-        key = slug(refract.meta.title);
+        key = safeSlug(refract.meta.title);
       } else if (refract.meta.classes && refract.meta.classes.length === 1) {
-        key = slug(refract.meta.classes[0]);
+        key = safeSlug(refract.meta.classes[0]);
       }
     }
 
@@ -117,6 +131,10 @@ class Abagnale {
     Forge an ID for a single refract structure and any children in-place.
   */
   forgeOne(path, refract) {
+    if (!refract) {
+      return refract;
+    }
+
     if (!refract.meta) {
       refract.meta = {};
     }
@@ -127,15 +145,17 @@ class Abagnale {
       refract.meta.links = [];
     }
 
-    refract.meta.links.push({
-      element: 'link',
-      content: {
-        relation: 'uri-fragment',
-        href: refract.meta.id.split(this.options.separator)
-                             .map((item) => slug(item))
-                             .join(this.options.uriSeparator),
-      },
-    });
+    if (refract.meta.id && refract.meta.id.split) {
+      refract.meta.links.push({
+        element: 'link',
+        content: {
+          relation: 'uri-fragment',
+          href: refract.meta.id.split(this.options.separator)
+                               .map((item) => safeSlug(item))
+                               .join(this.options.uriSeparator),
+        },
+      });
+    }
 
     // Array like content containing elements?
     if (refract.content && refract.content.length && refract.content[0].element) {

@@ -24,7 +24,6 @@
     "peasant": "^0.5.2"
   },
   "dependencies": {
-    "babel-runtime": "^5.0.0",
-    "slug": "^0.9.1"
+    "babel-runtime": "^5.0.0"
   }
 }

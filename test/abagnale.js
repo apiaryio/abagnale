@@ -86,7 +86,7 @@ describe('Test fixtures match expected output', () => {
         output = generated;
       }
 
-      assert.deepEqual(output, generated);
+      assert.deepEqual(generated, output);
     });
   });
 });

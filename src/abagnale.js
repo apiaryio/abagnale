@@ -1,7 +1,10 @@
 // A safe way to slugify values. If the input is null, undefined, or
 // some other error happens downstream, we simply return `unknown`.
-function safeSlug(value) {
-  return encodeURIComponent(value).toLowerCase().replace(/[!'()*]/g, x => `%${x.charCodeAt(0).toString(16)}`).replace(/%20|%2520/g, '-') || 'unknown';
+function safeSlug(value = 'unknown') {
+  return encodeURIComponent(value)
+  .toLowerCase()
+  .replace(/[!'()*]/g, x => `%${x.charCodeAt(0).toString(16)}`) // RFC 3986 & https://developer.mozilla.org/cs/docs/Web/JavaScript/Reference/Global_Objects/encodeURIComponent
+  .replace(/%20|%2520/g, '-'); // Swap (encoded) spaces for hyphens
 }
 
 class Abagnale {

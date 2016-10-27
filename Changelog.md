@@ -1,3 +1,7 @@
+# 1.1.2 - 2016-10-27
+
+- Remove `slug` dependency and replace it with `encodeURIComponent`. `slug` was including whole Unicode into final build.
+
 # 1.1.1 - 2016-04-20
 
 - Prevent crashing due to some bad inputs that could not be sluggified.

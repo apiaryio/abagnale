@@ -1,0 +1,17 @@
+[
+  {
+    "element": "string",
+    "meta": {
+      "id": "Hello World",
+      "links": [
+        {
+          "element": "link",
+          "content": {
+            "href": "hello-world",
+            "relation": "uri-fragment"
+          }
+        }
+      ]
+    }
+  }
+]

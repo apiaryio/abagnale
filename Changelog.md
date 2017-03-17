@@ -1,3 +1,21 @@
+# 1.1.3 - 2017-03-17
+
+## Bug Fixes
+
+- Adds support for Refracted meta IDs.
+
+  ```json
+  {
+    "element": "string",
+    "meta": {
+      "id": {
+        "element": "string",
+        "content": "Hello World"
+      }
+    }
+  }
+  ```
+
 # 1.1.2 - 2016-10-27
 
 - Remove `slug` dependency and replace it with `encodeURIComponent`. `slug` was including whole Unicode into final build.

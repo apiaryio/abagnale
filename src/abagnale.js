@@ -100,7 +100,11 @@ class Abagnale {
 
     if (refract.meta) {
       if (refract.meta.id) {
-        newPath = [refract.meta.id];
+        if (typeof refract.meta.id === 'object') {
+          newPath = [refract.meta.id.content];
+        } else {
+          newPath = [refract.meta.id];
+        }
       } else if (path.length === 0 && refract.meta.classes &&
                  refract.meta.classes.length === 1) {
         // This is the first item, and it has a class name, so we use that.

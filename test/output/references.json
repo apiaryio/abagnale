@@ -11,7 +11,7 @@
         "content": [
           {
             "element": "link",
-            "content": {
+            "attributes": {
               "relation": "uri-fragment",
               "href": "myobject"
             }
@@ -36,7 +36,7 @@
                 "content": [
                   {
                     "element": "link",
-                    "content": {
+                    "attributes": {
                       "relation": "uri-fragment",
                       "href": "myobject/name-key"
                     }
@@ -57,7 +57,7 @@
                 "content": [
                   {
                     "element": "link",
-                    "content": {
+                    "attributes": {
                       "relation": "uri-fragment",
                       "href": "myobject/name"
                     }
@@ -77,7 +77,7 @@
             "content": [
               {
                 "element": "link",
-                "content": {
+                "attributes": {
                   "relation": "uri-fragment",
                   "href": "myobject/name-member"
                 }
@@ -106,7 +106,7 @@
         "content": [
           {
             "element": "link",
-            "content": {
+            "attributes": {
               "relation": "uri-fragment",
               "href": "specialstring"
             }
@@ -128,7 +128,7 @@
         "content": [
           {
             "element": "link",
-            "content": {
+            "attributes": {
               "relation": "uri-fragment",
               "href": "includedobject"
             }
@@ -153,7 +153,7 @@
                 "content": [
                   {
                     "element": "link",
-                    "content": {
+                    "attributes": {
                       "relation": "uri-fragment",
                       "href": "includedobject/address-key"
                     }
@@ -174,7 +174,7 @@
                 "content": [
                   {
                     "element": "link",
-                    "content": {
+                    "attributes": {
                       "relation": "uri-fragment",
                       "href": "includedobject/address"
                     }
@@ -194,7 +194,7 @@
             "content": [
               {
                 "element": "link",
-                "content": {
+                "attributes": {
                   "relation": "uri-fragment",
                   "href": "includedobject/address-member"
                 }

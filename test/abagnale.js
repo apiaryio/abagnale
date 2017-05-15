@@ -95,7 +95,7 @@ describe('Creating element IDs', () => {
           content: [
             {
               element: 'link',
-              content: {
+              attributes: {
                 href: 'exampleid',
                 relation: 'uri-fragment'
               }
@@ -145,7 +145,7 @@ describe('Creating element IDs', () => {
           content: [
             {
               element: 'link',
-              content: {
+              attributes: {
                 href: 'exampleid',
                 relation: 'uri-fragment'
               }
@@ -177,7 +177,7 @@ describe('Creating element IDs', () => {
           content: [
             {
               element: 'link',
-              content: {
+              attributes: {
                 href: 'annotation',
                 relation: 'uri-fragment'
               }
@@ -217,7 +217,7 @@ describe('Creating element IDs', () => {
           content: [
             {
               element: 'link',
-              content: {
+              attributes: {
                 href: 'warning',
                 relation: 'uri-fragment'
               }
@@ -269,7 +269,7 @@ describe('Creating element IDs', () => {
           content: [
             {
               element: 'link',
-              content: {
+              attributes: {
                 href: 'warning',
                 relation: 'uri-fragment'
               }
@@ -307,7 +307,7 @@ describe('Creating element IDs', () => {
           content: [
             {
               element: 'link',
-              content: {
+              attributes: {
                 href: 'exampleid',
                 relation: 'uri-fragment'
               }
@@ -359,7 +359,7 @@ describe('Creating element IDs', () => {
           },
           {
             element: 'link',
-            content: {
+            attributes: {
               href: 'exampleid',
               relation: 'uri-fragment'
             }
@@ -415,7 +415,7 @@ describe('Creating element IDs', () => {
             },
             {
               element: 'link',
-              content: {
+              attributes: {
                 href: 'exampleid',
                 relation: 'uri-fragment'
               }

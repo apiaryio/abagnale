@@ -164,7 +164,7 @@ class Abagnale {
     if (refract.meta.id && refract.meta.id.content && refract.meta.id.content.split) {
       const link = {
         element: 'link',
-        content: {
+        attributes: {
           relation: 'uri-fragment',
           href: refract.meta.id.content.split(this.options.separator)
                                .map((item) => safeSlug(item))

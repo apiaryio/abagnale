@@ -11,7 +11,7 @@
         "content": [
           {
             "element": "link",
-            "content": {
+            "attributes": {
               "relation": "uri-fragment",
               "href": "hello-world"
             }

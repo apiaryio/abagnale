@@ -18,7 +18,7 @@
                 "content": [
                   {
                     "element": "link",
-                    "content": {
+                    "attributes": {
                       "relation": "uri-fragment",
                       "href": "object/name-key"
                     }
@@ -39,7 +39,7 @@
                 "content": [
                   {
                     "element": "link",
-                    "content": {
+                    "attributes": {
                       "relation": "uri-fragment",
                       "href": "object/name"
                     }
@@ -59,7 +59,7 @@
             "content": [
               {
                 "element": "link",
-                "content": {
+                "attributes": {
                   "relation": "uri-fragment",
                   "href": "object/name-member"
                 }
@@ -84,7 +84,7 @@
                 "content": [
                   {
                     "element": "link",
-                    "content": {
+                    "attributes": {
                       "relation": "uri-fragment",
                       "href": "object/tags-key"
                     }
@@ -115,7 +115,7 @@
                             "content": [
                               {
                                 "element": "link",
-                                "content": {
+                                "attributes": {
                                   "relation": "uri-fragment",
                                   "href": "object/tags/0/name-key"
                                 }
@@ -136,7 +136,7 @@
                             "content": [
                               {
                                 "element": "link",
-                                "content": {
+                                "attributes": {
                                   "relation": "uri-fragment",
                                   "href": "object/tags/0/name"
                                 }
@@ -156,7 +156,7 @@
                         "content": [
                           {
                             "element": "link",
-                            "content": {
+                            "attributes": {
                               "relation": "uri-fragment",
                               "href": "object/tags/0/name-member"
                             }
@@ -181,7 +181,7 @@
                             "content": [
                               {
                                 "element": "link",
-                                "content": {
+                                "attributes": {
                                   "relation": "uri-fragment",
                                   "href": "object/tags/0/count-key"
                                 }
@@ -202,7 +202,7 @@
                             "content": [
                               {
                                 "element": "link",
-                                "content": {
+                                "attributes": {
                                   "relation": "uri-fragment",
                                   "href": "object/tags/0/count"
                                 }
@@ -222,7 +222,7 @@
                         "content": [
                           {
                             "element": "link",
-                            "content": {
+                            "attributes": {
                               "relation": "uri-fragment",
                               "href": "object/tags/0/count-member"
                             }
@@ -242,7 +242,7 @@
                     "content": [
                       {
                         "element": "link",
-                        "content": {
+                        "attributes": {
                           "relation": "uri-fragment",
                           "href": "object/tags/0"
                         }
@@ -262,7 +262,7 @@
                 "content": [
                   {
                     "element": "link",
-                    "content": {
+                    "attributes": {
                       "relation": "uri-fragment",
                       "href": "object/tags"
                     }
@@ -282,7 +282,7 @@
             "content": [
               {
                 "element": "link",
-                "content": {
+                "attributes": {
                   "relation": "uri-fragment",
                   "href": "object/tags-member"
                 }
@@ -302,7 +302,7 @@
         "content": [
           {
             "element": "link",
-            "content": {
+            "attributes": {
               "relation": "uri-fragment",
               "href": "object"
             }

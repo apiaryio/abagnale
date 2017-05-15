@@ -71,6 +71,97 @@ describe('Bad refract input data', () => {
   });
 });
 
+describe('Creating element IDs', () => {
+  it('should leave existing unrefracted ID unmodified', () => {
+    const input = [{
+      element: 'annotation',
+      meta: {
+        id: 'exampleID'
+      },
+      content: 'There is some problem.'
+    }];
+
+    const output = abagnale.forge(input);
+
+    assert.deepEqual(output, [{
+      element: 'annotation',
+      meta: {
+        id: 'exampleID',
+        links: [
+          {
+            element: 'link',
+            content: {
+              href: 'exampleid',
+              relation: 'uri-fragment'
+            }
+          }
+        ]
+      },
+      content: 'There is some problem.'
+    }]);
+  });
+
+  it('should generate ID from element name', () => {
+    const input = [{
+      element: 'annotation',
+      content: 'There is some problem.'
+    }];
+
+    const output = abagnale.forge(input);
+
+    assert.deepEqual(output, [{
+      element: 'annotation',
+      meta: {
+        id: 'annotation',
+        links: [
+          {
+            element: 'link',
+            content: {
+              href: 'annotation',
+              relation: 'uri-fragment'
+            }
+          }
+        ]
+      },
+      content: 'There is some problem.'
+    }]);
+  });
+
+  it('should generate ID from first unrefracted class', () => {
+    const input = [{
+      element: 'annotation',
+      meta: {
+        classes: [
+          'warning'
+        ]
+      },
+      content: 'There is some problem.'
+    }];
+
+    const output = abagnale.forge(input);
+
+    assert.deepEqual(output, [{
+      element: 'annotation',
+      meta: {
+        id: 'warning',
+        classes: [
+          'warning'
+        ],
+        links: [
+          {
+            element: 'link',
+            content: {
+              href: 'warning',
+              relation: 'uri-fragment'
+            }
+          }
+        ]
+      },
+      content: 'There is some problem.'
+    }]);
+  });
+});
+
 describe('Test fixtures match expected output', () => {
   glob.sync('./test/input/*.json').forEach((filename) => {
     it(path.basename(filename, '.json'), () => {

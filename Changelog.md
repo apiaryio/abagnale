@@ -1,3 +1,9 @@
+# Master
+
+## Bug Fixes
+
+- Support generating an element ID from a Refracted classes.
+
 # 1.1.3 - 2017-03-17
 
 ## Bug Fixes

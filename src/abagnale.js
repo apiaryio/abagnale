@@ -105,10 +105,20 @@ class Abagnale {
         } else {
           newPath = [refract.meta.id];
         }
-      } else if (path.length === 0 && refract.meta.classes &&
-                 refract.meta.classes.length === 1) {
-        // This is the first item, and it has a class name, so we use that.
-        newPath = [refract.meta.classes[0]];
+      } else if (path.length === 0 && refract.meta.classes) {
+        const classes = refract.meta.classes;
+
+        if (classes.content && classes.content.length === 1) {
+          const klass = classes.content[0];
+
+          if (klass.element) {
+            newPath = [refract.meta.classes.content[0].content];
+          } else {
+            newPath = [refract.meta.classes.content[0]];
+          }
+        } else if (classes.element === undefined && classes.length === 1) {
+          newPath = [refract.meta.classes[0]];
+        }
       }
     }
 

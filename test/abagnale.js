@@ -160,6 +160,52 @@ describe('Creating element IDs', () => {
       content: 'There is some problem.'
     }]);
   });
+
+  it('should generate ID from first refracted class', () => {
+    const input = [{
+      element: 'annotation',
+      meta: {
+        classes: {
+          element: 'array',
+          content: [
+            {
+              element: 'string',
+              content: 'warning'
+            }
+          ]
+        }
+      },
+      content: 'There is some problem.'
+    }];
+
+    const output = abagnale.forge(input);
+
+    assert.deepEqual(output, [{
+      element: 'annotation',
+      meta: {
+        id: 'warning',
+        classes: {
+          element: 'array',
+          content: [
+            {
+              element: 'string',
+              content: 'warning'
+            }
+          ]
+        },
+        links: [
+          {
+            element: 'link',
+            content: {
+              href: 'warning',
+              relation: 'uri-fragment'
+            }
+          }
+        ]
+      },
+      content: 'There is some problem.'
+    }]);
+  });
 });
 
 describe('Test fixtures match expected output', () => {

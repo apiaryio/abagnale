@@ -86,7 +86,10 @@ describe('Creating element IDs', () => {
     assert.deepEqual(output, [{
       element: 'annotation',
       meta: {
-        id: 'exampleID',
+        id: {
+          element: 'string',
+          content: 'exampleID'
+        },
         links: [
           {
             element: 'link',
@@ -112,7 +115,10 @@ describe('Creating element IDs', () => {
     assert.deepEqual(output, [{
       element: 'annotation',
       meta: {
-        id: 'annotation',
+        id: {
+          element: 'string',
+          content: 'annotation'
+        },
         links: [
           {
             element: 'link',
@@ -143,7 +149,10 @@ describe('Creating element IDs', () => {
     assert.deepEqual(output, [{
       element: 'annotation',
       meta: {
-        id: 'warning',
+        id: {
+          element: 'string',
+          content: 'warning'
+        },
         classes: [
           'warning'
         ],
@@ -183,7 +192,10 @@ describe('Creating element IDs', () => {
     assert.deepEqual(output, [{
       element: 'annotation',
       meta: {
-        id: 'warning',
+        id: {
+          element: 'string',
+          content: 'warning'
+        },
         classes: {
           element: 'array',
           content: [

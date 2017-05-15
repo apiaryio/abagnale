@@ -3,6 +3,7 @@
 ## Bug Fixes
 
 - Support generating an element ID from a Refracted classes.
+- Element IDs will *always* be Refracted elements.
 
 # 1.1.3 - 2017-03-17
 

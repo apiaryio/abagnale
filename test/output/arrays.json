@@ -5,7 +5,10 @@
       {
         "element": "string",
         "meta": {
-          "id": "array.0",
+          "id": {
+            "element": "string",
+            "content": "array.0"
+          },
           "links": [
             {
               "element": "link",
@@ -23,7 +26,10 @@
           {
             "element": "number",
             "meta": {
-              "id": "array.1.0",
+              "id": {
+                "element": "string",
+                "content": "array.1.0"
+              },
               "links": [
                 {
                   "element": "link",
@@ -37,7 +43,10 @@
           }
         ],
         "meta": {
-          "id": "array.1",
+          "id": {
+            "element": "string",
+            "content": "array.1"
+          },
           "links": [
             {
               "element": "link",
@@ -51,7 +60,10 @@
       }
     ],
     "meta": {
-      "id": "array",
+      "id": {
+        "element": "string",
+        "content": "array"
+      },
       "links": [
         {
           "element": "link",

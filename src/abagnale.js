@@ -93,9 +93,9 @@ class Abagnale {
   /*
     Get an ID for an element, based on the current path, any existing ID,
     and any element class name. An existing ID will trump other values and
-    resets the path. Returns the unique ID to use.
+    resets the path. Returns the unique ID element to use.
   */
-  idForElement(path, refract) {
+  idElementForElement(path, refract) {
     let newPath = path;
 
     if (refract.meta) {
@@ -128,7 +128,12 @@ class Abagnale {
       id = refract.element;
     }
 
-    return this.getUnique(id);
+    const uniqueId = this.getUnique(id);
+
+    return {
+      element: 'string',
+      content: uniqueId
+    };
   }
 
   /*
@@ -143,18 +148,18 @@ class Abagnale {
       refract.meta = {};
     }
 
-    refract.meta.id = this.idForElement(path, refract);
+    refract.meta.id = this.idElementForElement(path, refract);
 
     if (!refract.meta.links) {
       refract.meta.links = [];
     }
 
-    if (refract.meta.id && refract.meta.id.split) {
+    if (refract.meta.id && refract.meta.id.content && refract.meta.id.content.split) {
       refract.meta.links.push({
         element: 'link',
         content: {
           relation: 'uri-fragment',
-          href: refract.meta.id.split(this.options.separator)
+          href: refract.meta.id.content.split(this.options.separator)
                                .map((item) => safeSlug(item))
                                .join(this.options.uriSeparator),
         },
@@ -166,7 +171,7 @@ class Abagnale {
       for (let i = 0; i < refract.content.length; i++) {
         const item = refract.content[i];
         const key = this.keyForArray(i, item);
-        const newPath = [refract.meta.id, key].join(this.options.separator);
+        const newPath = [refract.meta.id.content, key].join(this.options.separator);
 
         switch (item.element) {
         case 'ref':

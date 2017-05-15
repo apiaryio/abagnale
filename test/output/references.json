@@ -2,7 +2,10 @@
   {
     "element": "object",
     "meta": {
-      "id": "MyObject",
+      "id": {
+        "element": "string",
+        "content": "MyObject"
+      },
       "links": [
         {
           "element": "link",
@@ -21,7 +24,10 @@
             "element": "string",
             "content": "name",
             "meta": {
-              "id": "MyObject.name-key",
+              "id": {
+                "element": "string",
+                "content": "MyObject.name-key"
+              },
               "links": [
                 {
                   "element": "link",
@@ -36,7 +42,10 @@
           "value": {
             "element": "SpecialString",
             "meta": {
-              "id": "MyObject.name",
+              "id": {
+                "element": "string",
+                "content": "MyObject.name"
+              },
               "links": [
                 {
                   "element": "link",
@@ -50,7 +59,10 @@
           }
         },
         "meta": {
-          "id": "MyObject.name-member",
+          "id": {
+            "element": "string",
+            "content": "MyObject.name-member"
+          },
           "links": [
             {
               "element": "link",
@@ -73,7 +85,10 @@
   {
     "element": "string",
     "meta": {
-      "id": "SpecialString",
+      "id": {
+        "element": "string",
+        "content": "SpecialString"
+      },
       "links": [
         {
           "element": "link",
@@ -89,7 +104,10 @@
   {
     "element": "object",
     "meta": {
-      "id": "IncludedObject",
+      "id": {
+        "element": "string",
+        "content": "IncludedObject"
+      },
       "links": [
         {
           "element": "link",
@@ -108,7 +126,10 @@
             "element": "string",
             "content": "address",
             "meta": {
-              "id": "IncludedObject.address-key",
+              "id": {
+                "element": "string",
+                "content": "IncludedObject.address-key"
+              },
               "links": [
                 {
                   "element": "link",
@@ -123,7 +144,10 @@
           "value": {
             "element": "string",
             "meta": {
-              "id": "IncludedObject.address",
+              "id": {
+                "element": "string",
+                "content": "IncludedObject.address"
+              },
               "links": [
                 {
                   "element": "link",
@@ -137,7 +161,10 @@
           }
         },
         "meta": {
-          "id": "IncludedObject.address-member",
+          "id": {
+            "element": "string",
+            "content": "IncludedObject.address-member"
+          },
           "links": [
             {
               "element": "link",

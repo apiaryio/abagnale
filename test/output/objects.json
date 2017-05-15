@@ -9,7 +9,10 @@
             "element": "string",
             "content": "name",
             "meta": {
-              "id": "object.name-key",
+              "id": {
+                "element": "string",
+                "content": "object.name-key"
+              },
               "links": [
                 {
                   "element": "link",
@@ -24,7 +27,10 @@
           "value": {
             "element": "string",
             "meta": {
-              "id": "object.name",
+              "id": {
+                "element": "string",
+                "content": "object.name"
+              },
               "links": [
                 {
                   "element": "link",
@@ -38,7 +44,10 @@
           }
         },
         "meta": {
-          "id": "object.name-member",
+          "id": {
+            "element": "string",
+            "content": "object.name-member"
+          },
           "links": [
             {
               "element": "link",
@@ -57,7 +66,10 @@
             "element": "string",
             "content": "tags",
             "meta": {
-              "id": "object.tags-key",
+              "id": {
+                "element": "string",
+                "content": "object.tags-key"
+              },
               "links": [
                 {
                   "element": "link",
@@ -82,7 +94,10 @@
                         "element": "string",
                         "content": "name",
                         "meta": {
-                          "id": "object.tags.0.name-key",
+                          "id": {
+                            "element": "string",
+                            "content": "object.tags.0.name-key"
+                          },
                           "links": [
                             {
                               "element": "link",
@@ -97,7 +112,10 @@
                       "value": {
                         "element": "string",
                         "meta": {
-                          "id": "object.tags.0.name",
+                          "id": {
+                            "element": "string",
+                            "content": "object.tags.0.name"
+                          },
                           "links": [
                             {
                               "element": "link",
@@ -111,7 +129,10 @@
                       }
                     },
                     "meta": {
-                      "id": "object.tags.0.name-member",
+                      "id": {
+                        "element": "string",
+                        "content": "object.tags.0.name-member"
+                      },
                       "links": [
                         {
                           "element": "link",
@@ -130,7 +151,10 @@
                         "element": "string",
                         "content": "count",
                         "meta": {
-                          "id": "object.tags.0.count-key",
+                          "id": {
+                            "element": "string",
+                            "content": "object.tags.0.count-key"
+                          },
                           "links": [
                             {
                               "element": "link",
@@ -145,7 +169,10 @@
                       "value": {
                         "element": "number",
                         "meta": {
-                          "id": "object.tags.0.count",
+                          "id": {
+                            "element": "string",
+                            "content": "object.tags.0.count"
+                          },
                           "links": [
                             {
                               "element": "link",
@@ -159,7 +186,10 @@
                       }
                     },
                     "meta": {
-                      "id": "object.tags.0.count-member",
+                      "id": {
+                        "element": "string",
+                        "content": "object.tags.0.count-member"
+                      },
                       "links": [
                         {
                           "element": "link",
@@ -173,7 +203,10 @@
                   }
                 ],
                 "meta": {
-                  "id": "object.tags.0",
+                  "id": {
+                    "element": "string",
+                    "content": "object.tags.0"
+                  },
                   "links": [
                     {
                       "element": "link",
@@ -187,7 +220,10 @@
               }
             ],
             "meta": {
-              "id": "object.tags",
+              "id": {
+                "element": "string",
+                "content": "object.tags"
+              },
               "links": [
                 {
                   "element": "link",
@@ -201,7 +237,10 @@
           }
         },
         "meta": {
-          "id": "object.tags-member",
+          "id": {
+            "element": "string",
+            "content": "object.tags-member"
+          },
           "links": [
             {
               "element": "link",
@@ -215,7 +254,10 @@
       }
     ],
     "meta": {
-      "id": "object",
+      "id": {
+        "element": "string",
+        "content": "object"
+      },
       "links": [
         {
           "element": "link",

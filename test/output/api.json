@@ -6,7 +6,10 @@
         "api"
       ],
       "title": "My API",
-      "id": "api",
+      "id": {
+        "element": "string",
+        "content": "api"
+      },
       "links": [
         {
           "element": "link",
@@ -47,7 +50,10 @@
             "resourceGroup"
           ],
           "title": "",
-          "id": "api.resourcegroup",
+          "id": {
+            "element": "string",
+            "content": "api.resourcegroup"
+          },
           "links": [
             {
               "element": "link",
@@ -63,7 +69,10 @@
             "element": "resource",
             "meta": {
               "title": "Frob",
-              "id": "api.resourcegroup.frob",
+              "id": {
+                "element": "string",
+                "content": "api.resourcegroup.frob"
+              },
               "links": [
                 {
                   "element": "link",
@@ -82,7 +91,10 @@
                 "element": "transition",
                 "meta": {
                   "title": "Get a frob",
-                  "id": "api.resourcegroup.frob.get-a-frob",
+                  "id": {
+                    "element": "string",
+                    "content": "api.resourcegroup.frob.get-a-frob"
+                  },
                   "links": [
                     {
                       "element": "link",
@@ -104,7 +116,10 @@
                         },
                         "content": [],
                         "meta": {
-                          "id": "api.resourcegroup.frob.get-a-frob.httptransaction.httprequest",
+                          "id": {
+                            "element": "string",
+                            "content": "api.resourcegroup.frob.get-a-frob.httptransaction.httprequest"
+                          },
                           "links": [
                             {
                               "element": "link",
@@ -135,7 +150,10 @@
                                         "element": "string",
                                         "content": "id",
                                         "meta": {
-                                          "id": "api.resourcegroup.frob.get-a-frob.httptransaction.httpresponse.datastructure.0.id-key",
+                                          "id": {
+                                            "element": "string",
+                                            "content": "api.resourcegroup.frob.get-a-frob.httptransaction.httpresponse.datastructure.0.id-key"
+                                          },
                                           "links": [
                                             {
                                               "element": "link",
@@ -151,7 +169,10 @@
                                         "element": "string",
                                         "content": "123",
                                         "meta": {
-                                          "id": "api.resourcegroup.frob.get-a-frob.httptransaction.httpresponse.datastructure.0.id",
+                                          "id": {
+                                            "element": "string",
+                                            "content": "api.resourcegroup.frob.get-a-frob.httptransaction.httpresponse.datastructure.0.id"
+                                          },
                                           "links": [
                                             {
                                               "element": "link",
@@ -165,7 +186,10 @@
                                       }
                                     },
                                     "meta": {
-                                      "id": "api.resourcegroup.frob.get-a-frob.httptransaction.httpresponse.datastructure.0.id-member",
+                                      "id": {
+                                        "element": "string",
+                                        "content": "api.resourcegroup.frob.get-a-frob.httptransaction.httpresponse.datastructure.0.id-member"
+                                      },
                                       "links": [
                                         {
                                           "element": "link",
@@ -179,7 +203,10 @@
                                   }
                                 ],
                                 "meta": {
-                                  "id": "api.resourcegroup.frob.get-a-frob.httptransaction.httpresponse.datastructure.0",
+                                  "id": {
+                                    "element": "string",
+                                    "content": "api.resourcegroup.frob.get-a-frob.httptransaction.httpresponse.datastructure.0"
+                                  },
                                   "links": [
                                     {
                                       "element": "link",
@@ -193,7 +220,10 @@
                               }
                             ],
                             "meta": {
-                              "id": "api.resourcegroup.frob.get-a-frob.httptransaction.httpresponse.datastructure",
+                              "id": {
+                                "element": "string",
+                                "content": "api.resourcegroup.frob.get-a-frob.httptransaction.httpresponse.datastructure"
+                              },
                               "links": [
                                 {
                                   "element": "link",
@@ -211,7 +241,10 @@
                               "classes": [
                                 "messageBodySchema"
                               ],
-                              "id": "api.resourcegroup.frob.get-a-frob.httptransaction.httpresponse.messagebodyschema",
+                              "id": {
+                                "element": "string",
+                                "content": "api.resourcegroup.frob.get-a-frob.httptransaction.httpresponse.messagebodyschema"
+                              },
                               "links": [
                                 {
                                   "element": "link",
@@ -226,7 +259,10 @@
                           }
                         ],
                         "meta": {
-                          "id": "api.resourcegroup.frob.get-a-frob.httptransaction.httpresponse",
+                          "id": {
+                            "element": "string",
+                            "content": "api.resourcegroup.frob.get-a-frob.httptransaction.httpresponse"
+                          },
                           "links": [
                             {
                               "element": "link",
@@ -240,7 +276,10 @@
                       }
                     ],
                     "meta": {
-                      "id": "api.resourcegroup.frob.get-a-frob.httptransaction",
+                      "id": {
+                        "element": "string",
+                        "content": "api.resourcegroup.frob.get-a-frob.httptransaction"
+                      },
                       "links": [
                         {
                           "element": "link",

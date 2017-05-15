@@ -3,7 +3,10 @@
     "element": "boolean",
     "content": true,
     "meta": {
-      "id": "boolean",
+      "id": {
+        "element": "string",
+        "content": "boolean"
+      },
       "links": [
         {
           "element": "link",
@@ -19,7 +22,10 @@
     "element": "string",
     "content": "test",
     "meta": {
-      "id": "string",
+      "id": {
+        "element": "string",
+        "content": "string"
+      },
       "links": [
         {
           "element": "link",
@@ -35,7 +41,10 @@
     "element": "string",
     "content": "another test",
     "meta": {
-      "id": "string-2",
+      "id": {
+        "element": "string",
+        "content": "string-2"
+      },
       "links": [
         {
           "element": "link",
@@ -51,7 +60,10 @@
     "element": "number",
     "content": 123,
     "meta": {
-      "id": "number",
+      "id": {
+        "element": "string",
+        "content": "number"
+      },
       "links": [
         {
           "element": "link",
@@ -67,7 +79,10 @@
     "element": "number",
     "content": 456,
     "meta": {
-      "id": "number-2",
+      "id": {
+        "element": "string",
+        "content": "number-2"
+      },
       "links": [
         {
           "element": "link",

@@ -104,6 +104,53 @@ describe('Creating element IDs', () => {
     }]);
   });
 
+  it('should leave existing refracted ID unmodified', () => {
+    const input = [{
+      element: 'annotation',
+      meta: {
+        id: {
+          element: 'string',
+          attributes: {
+            attr: {
+              element: 'string',
+              content: 'Example'
+            }
+          },
+          content: 'exampleID'
+        }
+      },
+      content: 'There is some problem.'
+    }];
+
+    const output = abagnale.forge(input);
+
+    assert.deepEqual(output, [{
+      element: 'annotation',
+      meta: {
+        id: {
+          element: 'string',
+          attributes: {
+            attr: {
+              element: 'string',
+              content: 'Example'
+            }
+          },
+          content: 'exampleID'
+        },
+        links: [
+          {
+            element: 'link',
+            content: {
+              href: 'exampleid',
+              relation: 'uri-fragment'
+            }
+          }
+        ]
+      },
+      content: 'There is some problem.'
+    }]);
+  });
+
   it('should generate ID from element name', () => {
     const input = [{
       element: 'annotation',

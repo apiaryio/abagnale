@@ -101,9 +101,14 @@ class Abagnale {
     if (refract.meta) {
       if (refract.meta.id) {
         if (typeof refract.meta.id === 'object') {
-          newPath = [refract.meta.id.content];
+          this.getUnique(refract.meta.id.content);
+          return refract.meta.id;
         } else {
-          newPath = [refract.meta.id];
+          this.getUnique(refract.meta.id);
+          return {
+            element: 'string',
+            content: refract.meta.id
+          };
         }
       } else if (path.length === 0 && refract.meta.classes) {
         const classes = refract.meta.classes;

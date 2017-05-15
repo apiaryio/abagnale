@@ -76,9 +76,9 @@ describe('Creating element IDs', () => {
     const input = [{
       element: 'annotation',
       meta: {
-        id: 'exampleID'
+        id: 'exampleID',
       },
-      content: 'There is some problem.'
+      content: 'There is some problem.',
     }];
 
     const output = abagnale.forge(input);
@@ -88,7 +88,7 @@ describe('Creating element IDs', () => {
       meta: {
         id: {
           element: 'string',
-          content: 'exampleID'
+          content: 'exampleID',
         },
         links: {
           element: 'array',
@@ -97,13 +97,13 @@ describe('Creating element IDs', () => {
               element: 'link',
               attributes: {
                 href: 'exampleid',
-                relation: 'uri-fragment'
-              }
-            }
-          ]
-        }
+                relation: 'uri-fragment',
+              },
+            },
+          ],
+        },
       },
-      content: 'There is some problem.'
+      content: 'There is some problem.',
     }]);
   });
 
@@ -116,13 +116,13 @@ describe('Creating element IDs', () => {
           attributes: {
             attr: {
               element: 'string',
-              content: 'Example'
-            }
+              content: 'Example',
+            },
           },
-          content: 'exampleID'
-        }
+          content: 'exampleID',
+        },
       },
-      content: 'There is some problem.'
+      content: 'There is some problem.',
     }];
 
     const output = abagnale.forge(input);
@@ -135,10 +135,10 @@ describe('Creating element IDs', () => {
           attributes: {
             attr: {
               element: 'string',
-              content: 'Example'
-            }
+              content: 'Example',
+            },
           },
-          content: 'exampleID'
+          content: 'exampleID',
         },
         links: {
           element: 'array',
@@ -147,20 +147,20 @@ describe('Creating element IDs', () => {
               element: 'link',
               attributes: {
                 href: 'exampleid',
-                relation: 'uri-fragment'
-              }
-            }
-          ]
-        }
+                relation: 'uri-fragment',
+              },
+            },
+          ],
+        },
       },
-      content: 'There is some problem.'
+      content: 'There is some problem.',
     }]);
   });
 
   it('should generate ID from element name', () => {
     const input = [{
       element: 'annotation',
-      content: 'There is some problem.'
+      content: 'There is some problem.',
     }];
 
     const output = abagnale.forge(input);
@@ -170,7 +170,7 @@ describe('Creating element IDs', () => {
       meta: {
         id: {
           element: 'string',
-          content: 'annotation'
+          content: 'annotation',
         },
         links: {
           element: 'array',
@@ -179,13 +179,13 @@ describe('Creating element IDs', () => {
               element: 'link',
               attributes: {
                 href: 'annotation',
-                relation: 'uri-fragment'
-              }
-            }
-          ]
-        }
+                relation: 'uri-fragment',
+              },
+            },
+          ],
+        },
       },
-      content: 'There is some problem.'
+      content: 'There is some problem.',
     }]);
   });
 
@@ -194,10 +194,10 @@ describe('Creating element IDs', () => {
       element: 'annotation',
       meta: {
         classes: [
-          'warning'
-        ]
+          'warning',
+        ],
       },
-      content: 'There is some problem.'
+      content: 'There is some problem.',
     }];
 
     const output = abagnale.forge(input);
@@ -207,10 +207,10 @@ describe('Creating element IDs', () => {
       meta: {
         id: {
           element: 'string',
-          content: 'warning'
+          content: 'warning',
         },
         classes: [
-          'warning'
+          'warning',
         ],
         links: {
           element: 'array',
@@ -219,13 +219,13 @@ describe('Creating element IDs', () => {
               element: 'link',
               attributes: {
                 href: 'warning',
-                relation: 'uri-fragment'
-              }
-            }
-          ]
-        }
+                relation: 'uri-fragment',
+              },
+            },
+          ],
+        },
       },
-      content: 'There is some problem.'
+      content: 'There is some problem.',
     }]);
   });
 
@@ -238,12 +238,12 @@ describe('Creating element IDs', () => {
           content: [
             {
               element: 'string',
-              content: 'warning'
-            }
-          ]
-        }
+              content: 'warning',
+            },
+          ],
+        },
       },
-      content: 'There is some problem.'
+      content: 'There is some problem.',
     }];
 
     const output = abagnale.forge(input);
@@ -253,16 +253,16 @@ describe('Creating element IDs', () => {
       meta: {
         id: {
           element: 'string',
-          content: 'warning'
+          content: 'warning',
         },
         classes: {
           element: 'array',
           content: [
             {
               element: 'string',
-              content: 'warning'
-            }
-          ]
+              content: 'warning',
+            },
+          ],
         },
         links: {
           element: 'array',
@@ -271,13 +271,13 @@ describe('Creating element IDs', () => {
               element: 'link',
               attributes: {
                 href: 'warning',
-                relation: 'uri-fragment'
-              }
-            }
-          ]
-        }
+                relation: 'uri-fragment',
+              },
+            },
+          ],
+        },
       },
-      content: 'There is some problem.'
+      content: 'There is some problem.',
     }]);
   });
 
@@ -287,10 +287,10 @@ describe('Creating element IDs', () => {
       meta: {
         id: {
           element: 'string',
-          content: 'exampleID'
-        }
+          content: 'exampleID',
+        },
       },
-      content: 'There is some problem.'
+      content: 'There is some problem.',
     }];
 
     const output = abagnale.forge(input);
@@ -300,7 +300,7 @@ describe('Creating element IDs', () => {
       meta: {
         id: {
           element: 'string',
-          content: 'exampleID'
+          content: 'exampleID',
         },
         links: {
           element: 'array',
@@ -309,13 +309,13 @@ describe('Creating element IDs', () => {
               element: 'link',
               attributes: {
                 href: 'exampleid',
-                relation: 'uri-fragment'
-              }
-            }
-          ]
-        }
+                relation: 'uri-fragment',
+              },
+            },
+          ],
+        },
       },
-      content: 'There is some problem.'
+      content: 'There is some problem.',
     }]);
   });
 
@@ -325,19 +325,19 @@ describe('Creating element IDs', () => {
       meta: {
         id: {
           element: 'string',
-          content: 'exampleID'
+          content: 'exampleID',
         },
         links: [
           {
             element: 'link',
             attributes: {
               relation: 'profile',
-              href: 'https://example.com/annotation'
-            }
-          }
-        ]
+              href: 'https://example.com/annotation',
+            },
+          },
+        ],
       },
-      content: 'There is some problem.'
+      content: 'There is some problem.',
     }];
 
     const output = abagnale.forge(input);
@@ -347,26 +347,26 @@ describe('Creating element IDs', () => {
       meta: {
         id: {
           element: 'string',
-          content: 'exampleID'
+          content: 'exampleID',
         },
         links: [
           {
             element: 'link',
             attributes: {
               relation: 'profile',
-              href: 'https://example.com/annotation'
-            }
+              href: 'https://example.com/annotation',
+            },
           },
           {
             element: 'link',
             attributes: {
               href: 'exampleid',
-              relation: 'uri-fragment'
-            }
-          }
-        ]
+              relation: 'uri-fragment',
+            },
+          },
+        ],
       },
-      content: 'There is some problem.'
+      content: 'There is some problem.',
     }]);
   });
 
@@ -376,7 +376,7 @@ describe('Creating element IDs', () => {
       meta: {
         id: {
           element: 'string',
-          content: 'exampleID'
+          content: 'exampleID',
         },
         links: {
           element: 'array',
@@ -385,13 +385,13 @@ describe('Creating element IDs', () => {
               element: 'link',
               attributes: {
                 relation: 'profile',
-                href: 'https://example.com/annotation'
-              }
-            }
-          ]
-        }
+                href: 'https://example.com/annotation',
+              },
+            },
+          ],
+        },
       },
-      content: 'There is some problem.'
+      content: 'There is some problem.',
     }];
 
     const output = abagnale.forge(input);
@@ -401,7 +401,7 @@ describe('Creating element IDs', () => {
       meta: {
         id: {
           element: 'string',
-          content: 'exampleID'
+          content: 'exampleID',
         },
         links: {
           element: 'array',
@@ -410,20 +410,20 @@ describe('Creating element IDs', () => {
               element: 'link',
               attributes: {
                 relation: 'profile',
-                href: 'https://example.com/annotation'
-              }
+                href: 'https://example.com/annotation',
+              },
             },
             {
               element: 'link',
               attributes: {
                 href: 'exampleid',
-                relation: 'uri-fragment'
-              }
-            }
-          ]
-        }
+                relation: 'uri-fragment',
+              },
+            },
+          ],
+        },
       },
-      content: 'There is some problem.'
+      content: 'There is some problem.',
     }]);
   });
 });

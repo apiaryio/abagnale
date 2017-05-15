@@ -103,13 +103,14 @@ class Abagnale {
         if (typeof refract.meta.id === 'object') {
           this.getUnique(refract.meta.id.content);
           return refract.meta.id;
-        } else {
-          this.getUnique(refract.meta.id);
-          return {
-            element: 'string',
-            content: refract.meta.id
-          };
         }
+
+        this.getUnique(refract.meta.id);
+
+        return {
+          element: 'string',
+          content: refract.meta.id,
+        };
       } else if (path.length === 0 && refract.meta.classes) {
         const classes = refract.meta.classes;
 
@@ -137,7 +138,7 @@ class Abagnale {
 
     return {
       element: 'string',
-      content: uniqueId
+      content: uniqueId,
     };
   }
 
@@ -157,7 +158,7 @@ class Abagnale {
 
     if (!refract.meta.links) {
       refract.meta.links = {
-        element: 'array'
+        element: 'array',
       };
     }
 

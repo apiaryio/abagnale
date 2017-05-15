@@ -160,7 +160,7 @@ class Abagnale {
     }
 
     if (refract.meta.id && refract.meta.id.content && refract.meta.id.content.split) {
-      refract.meta.links.push({
+      const link = {
         element: 'link',
         content: {
           relation: 'uri-fragment',
@@ -168,7 +168,17 @@ class Abagnale {
                                .map((item) => safeSlug(item))
                                .join(this.options.uriSeparator),
         },
-      });
+      };
+
+      if (refract.meta.links.element !== undefined) {
+        if (!refract.meta.links.content) {
+          refract.meta.links.content = [];
+        }
+
+        refract.meta.links.content.push(link);
+      } else {
+        refract.meta.links.push(link);
+      }
     }
 
     // Array like content containing elements?

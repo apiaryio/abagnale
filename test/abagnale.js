@@ -265,6 +265,149 @@ describe('Creating element IDs', () => {
       content: 'There is some problem.'
     }]);
   });
+
+  it('should add link elements for ID', () => {
+    const input = [{
+      element: 'annotation',
+      meta: {
+        id: {
+          element: 'string',
+          content: 'exampleID'
+        }
+      },
+      content: 'There is some problem.'
+    }];
+
+    const output = abagnale.forge(input);
+
+    assert.deepEqual(output, [{
+      element: 'annotation',
+      meta: {
+        id: {
+          element: 'string',
+          content: 'exampleID'
+        },
+        links: [
+          {
+            element: 'link',
+            content: {
+              href: 'exampleid',
+              relation: 'uri-fragment'
+            }
+          }
+        ]
+      },
+      content: 'There is some problem.'
+    }]);
+  });
+
+  it('should append link element to existing link elements for ID', () => {
+    const input = [{
+      element: 'annotation',
+      meta: {
+        id: {
+          element: 'string',
+          content: 'exampleID'
+        },
+        links: [
+          {
+            element: 'link',
+            attributes: {
+              relation: 'profile',
+              href: 'https://example.com/annotation'
+            }
+          }
+        ]
+      },
+      content: 'There is some problem.'
+    }];
+
+    const output = abagnale.forge(input);
+
+    assert.deepEqual(output, [{
+      element: 'annotation',
+      meta: {
+        id: {
+          element: 'string',
+          content: 'exampleID'
+        },
+        links: [
+          {
+            element: 'link',
+            attributes: {
+              relation: 'profile',
+              href: 'https://example.com/annotation'
+            }
+          },
+          {
+            element: 'link',
+            content: {
+              href: 'exampleid',
+              relation: 'uri-fragment'
+            }
+          }
+        ]
+      },
+      content: 'There is some problem.'
+    }]);
+  });
+
+  it('should append link element to existing link elements array element for ID', () => {
+    const input = [{
+      element: 'annotation',
+      meta: {
+        id: {
+          element: 'string',
+          content: 'exampleID'
+        },
+        links: {
+          element: 'array',
+          content: [
+            {
+              element: 'link',
+              attributes: {
+                relation: 'profile',
+                href: 'https://example.com/annotation'
+              }
+            }
+          ]
+        }
+      },
+      content: 'There is some problem.'
+    }];
+
+    const output = abagnale.forge(input);
+
+    assert.deepEqual(output, [{
+      element: 'annotation',
+      meta: {
+        id: {
+          element: 'string',
+          content: 'exampleID'
+        },
+        links: {
+          element: 'array',
+          content: [
+            {
+              element: 'link',
+              attributes: {
+                relation: 'profile',
+                href: 'https://example.com/annotation'
+              }
+            },
+            {
+              element: 'link',
+              content: {
+                href: 'exampleid',
+                relation: 'uri-fragment'
+              }
+            }
+          ]
+        }
+      },
+      content: 'There is some problem.'
+    }]);
+  });
 });
 
 describe('Test fixtures match expected output', () => {

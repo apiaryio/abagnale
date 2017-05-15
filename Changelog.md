@@ -5,6 +5,7 @@
 - Support generating an element ID from a Refracted classes.
 - Element IDs will *always* be Refracted elements.
 - Any meta or attributes attached to existing element IDs will no longer be removed.
+- Adds support for elements which have existing links meta values that are array elements.
 
 # 1.1.3 - 2017-03-17
 

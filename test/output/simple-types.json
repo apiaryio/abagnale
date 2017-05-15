@@ -7,15 +7,18 @@
         "element": "string",
         "content": "boolean"
       },
-      "links": [
-        {
-          "element": "link",
-          "content": {
-            "relation": "uri-fragment",
-            "href": "boolean"
+      "links": {
+        "element": "array",
+        "content": [
+          {
+            "element": "link",
+            "content": {
+              "relation": "uri-fragment",
+              "href": "boolean"
+            }
           }
-        }
-      ]
+        ]
+      }
     }
   },
   {
@@ -26,15 +29,18 @@
         "element": "string",
         "content": "string"
       },
-      "links": [
-        {
-          "element": "link",
-          "content": {
-            "relation": "uri-fragment",
-            "href": "string"
+      "links": {
+        "element": "array",
+        "content": [
+          {
+            "element": "link",
+            "content": {
+              "relation": "uri-fragment",
+              "href": "string"
+            }
           }
-        }
-      ]
+        ]
+      }
     }
   },
   {
@@ -45,15 +51,18 @@
         "element": "string",
         "content": "string-2"
       },
-      "links": [
-        {
-          "element": "link",
-          "content": {
-            "relation": "uri-fragment",
-            "href": "string-2"
+      "links": {
+        "element": "array",
+        "content": [
+          {
+            "element": "link",
+            "content": {
+              "relation": "uri-fragment",
+              "href": "string-2"
+            }
           }
-        }
-      ]
+        ]
+      }
     }
   },
   {
@@ -64,15 +73,18 @@
         "element": "string",
         "content": "number"
       },
-      "links": [
-        {
-          "element": "link",
-          "content": {
-            "relation": "uri-fragment",
-            "href": "number"
+      "links": {
+        "element": "array",
+        "content": [
+          {
+            "element": "link",
+            "content": {
+              "relation": "uri-fragment",
+              "href": "number"
+            }
           }
-        }
-      ]
+        ]
+      }
     }
   },
   {
@@ -83,15 +95,18 @@
         "element": "string",
         "content": "number-2"
       },
-      "links": [
-        {
-          "element": "link",
-          "content": {
-            "relation": "uri-fragment",
-            "href": "number-2"
+      "links": {
+        "element": "array",
+        "content": [
+          {
+            "element": "link",
+            "content": {
+              "relation": "uri-fragment",
+              "href": "number-2"
+            }
           }
-        }
-      ]
+        ]
+      }
     }
   }
 ]

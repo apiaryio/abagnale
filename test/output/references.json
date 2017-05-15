@@ -6,15 +6,18 @@
         "element": "string",
         "content": "MyObject"
       },
-      "links": [
-        {
-          "element": "link",
-          "content": {
-            "relation": "uri-fragment",
-            "href": "myobject"
+      "links": {
+        "element": "array",
+        "content": [
+          {
+            "element": "link",
+            "content": {
+              "relation": "uri-fragment",
+              "href": "myobject"
+            }
           }
-        }
-      ]
+        ]
+      }
     },
     "content": [
       {
@@ -28,15 +31,18 @@
                 "element": "string",
                 "content": "MyObject.name-key"
               },
-              "links": [
-                {
-                  "element": "link",
-                  "content": {
-                    "relation": "uri-fragment",
-                    "href": "myobject/name-key"
+              "links": {
+                "element": "array",
+                "content": [
+                  {
+                    "element": "link",
+                    "content": {
+                      "relation": "uri-fragment",
+                      "href": "myobject/name-key"
+                    }
                   }
-                }
-              ]
+                ]
+              }
             }
           },
           "value": {
@@ -46,15 +52,18 @@
                 "element": "string",
                 "content": "MyObject.name"
               },
-              "links": [
-                {
-                  "element": "link",
-                  "content": {
-                    "relation": "uri-fragment",
-                    "href": "myobject/name"
+              "links": {
+                "element": "array",
+                "content": [
+                  {
+                    "element": "link",
+                    "content": {
+                      "relation": "uri-fragment",
+                      "href": "myobject/name"
+                    }
                   }
-                }
-              ]
+                ]
+              }
             }
           }
         },
@@ -63,15 +72,18 @@
             "element": "string",
             "content": "MyObject.name-member"
           },
-          "links": [
-            {
-              "element": "link",
-              "content": {
-                "relation": "uri-fragment",
-                "href": "myobject/name-member"
+          "links": {
+            "element": "array",
+            "content": [
+              {
+                "element": "link",
+                "content": {
+                  "relation": "uri-fragment",
+                  "href": "myobject/name-member"
+                }
               }
-            }
-          ]
+            ]
+          }
         }
       },
       {
@@ -89,15 +101,18 @@
         "element": "string",
         "content": "SpecialString"
       },
-      "links": [
-        {
-          "element": "link",
-          "content": {
-            "relation": "uri-fragment",
-            "href": "specialstring"
+      "links": {
+        "element": "array",
+        "content": [
+          {
+            "element": "link",
+            "content": {
+              "relation": "uri-fragment",
+              "href": "specialstring"
+            }
           }
-        }
-      ]
+        ]
+      }
     },
     "content": "I am special"
   },
@@ -108,15 +123,18 @@
         "element": "string",
         "content": "IncludedObject"
       },
-      "links": [
-        {
-          "element": "link",
-          "content": {
-            "relation": "uri-fragment",
-            "href": "includedobject"
+      "links": {
+        "element": "array",
+        "content": [
+          {
+            "element": "link",
+            "content": {
+              "relation": "uri-fragment",
+              "href": "includedobject"
+            }
           }
-        }
-      ]
+        ]
+      }
     },
     "content": [
       {
@@ -130,15 +148,18 @@
                 "element": "string",
                 "content": "IncludedObject.address-key"
               },
-              "links": [
-                {
-                  "element": "link",
-                  "content": {
-                    "relation": "uri-fragment",
-                    "href": "includedobject/address-key"
+              "links": {
+                "element": "array",
+                "content": [
+                  {
+                    "element": "link",
+                    "content": {
+                      "relation": "uri-fragment",
+                      "href": "includedobject/address-key"
+                    }
                   }
-                }
-              ]
+                ]
+              }
             }
           },
           "value": {
@@ -148,15 +169,18 @@
                 "element": "string",
                 "content": "IncludedObject.address"
               },
-              "links": [
-                {
-                  "element": "link",
-                  "content": {
-                    "relation": "uri-fragment",
-                    "href": "includedobject/address"
+              "links": {
+                "element": "array",
+                "content": [
+                  {
+                    "element": "link",
+                    "content": {
+                      "relation": "uri-fragment",
+                      "href": "includedobject/address"
+                    }
                   }
-                }
-              ]
+                ]
+              }
             }
           }
         },
@@ -165,15 +189,18 @@
             "element": "string",
             "content": "IncludedObject.address-member"
           },
-          "links": [
-            {
-              "element": "link",
-              "content": {
-                "relation": "uri-fragment",
-                "href": "includedobject/address-member"
+          "links": {
+            "element": "array",
+            "content": [
+              {
+                "element": "link",
+                "content": {
+                  "relation": "uri-fragment",
+                  "href": "includedobject/address-member"
+                }
               }
-            }
-          ]
+            ]
+          }
         }
       }
     ]

@@ -9,15 +9,18 @@
             "element": "string",
             "content": "array.0"
           },
-          "links": [
-            {
-              "element": "link",
-              "content": {
-                "relation": "uri-fragment",
-                "href": "array/0"
+          "links": {
+            "element": "array",
+            "content": [
+              {
+                "element": "link",
+                "content": {
+                  "relation": "uri-fragment",
+                  "href": "array/0"
+                }
               }
-            }
-          ]
+            ]
+          }
         }
       },
       {
@@ -30,15 +33,18 @@
                 "element": "string",
                 "content": "array.1.0"
               },
-              "links": [
-                {
-                  "element": "link",
-                  "content": {
-                    "relation": "uri-fragment",
-                    "href": "array/1/0"
+              "links": {
+                "element": "array",
+                "content": [
+                  {
+                    "element": "link",
+                    "content": {
+                      "relation": "uri-fragment",
+                      "href": "array/1/0"
+                    }
                   }
-                }
-              ]
+                ]
+              }
             }
           }
         ],
@@ -47,15 +53,18 @@
             "element": "string",
             "content": "array.1"
           },
-          "links": [
-            {
-              "element": "link",
-              "content": {
-                "relation": "uri-fragment",
-                "href": "array/1"
+          "links": {
+            "element": "array",
+            "content": [
+              {
+                "element": "link",
+                "content": {
+                  "relation": "uri-fragment",
+                  "href": "array/1"
+                }
               }
-            }
-          ]
+            ]
+          }
         }
       }
     ],
@@ -64,15 +73,18 @@
         "element": "string",
         "content": "array"
       },
-      "links": [
-        {
-          "element": "link",
-          "content": {
-            "relation": "uri-fragment",
-            "href": "array"
+      "links": {
+        "element": "array",
+        "content": [
+          {
+            "element": "link",
+            "content": {
+              "relation": "uri-fragment",
+              "href": "array"
+            }
           }
-        }
-      ]
+        ]
+      }
     }
   }
 ]

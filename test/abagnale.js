@@ -90,15 +90,18 @@ describe('Creating element IDs', () => {
           element: 'string',
           content: 'exampleID'
         },
-        links: [
-          {
-            element: 'link',
-            content: {
-              href: 'exampleid',
-              relation: 'uri-fragment'
+        links: {
+          element: 'array',
+          content: [
+            {
+              element: 'link',
+              content: {
+                href: 'exampleid',
+                relation: 'uri-fragment'
+              }
             }
-          }
-        ]
+          ]
+        }
       },
       content: 'There is some problem.'
     }]);
@@ -137,15 +140,18 @@ describe('Creating element IDs', () => {
           },
           content: 'exampleID'
         },
-        links: [
-          {
-            element: 'link',
-            content: {
-              href: 'exampleid',
-              relation: 'uri-fragment'
+        links: {
+          element: 'array',
+          content: [
+            {
+              element: 'link',
+              content: {
+                href: 'exampleid',
+                relation: 'uri-fragment'
+              }
             }
-          }
-        ]
+          ]
+        }
       },
       content: 'There is some problem.'
     }]);
@@ -166,15 +172,18 @@ describe('Creating element IDs', () => {
           element: 'string',
           content: 'annotation'
         },
-        links: [
-          {
-            element: 'link',
-            content: {
-              href: 'annotation',
-              relation: 'uri-fragment'
+        links: {
+          element: 'array',
+          content: [
+            {
+              element: 'link',
+              content: {
+                href: 'annotation',
+                relation: 'uri-fragment'
+              }
             }
-          }
-        ]
+          ]
+        }
       },
       content: 'There is some problem.'
     }]);
@@ -203,15 +212,18 @@ describe('Creating element IDs', () => {
         classes: [
           'warning'
         ],
-        links: [
-          {
-            element: 'link',
-            content: {
-              href: 'warning',
-              relation: 'uri-fragment'
+        links: {
+          element: 'array',
+          content: [
+            {
+              element: 'link',
+              content: {
+                href: 'warning',
+                relation: 'uri-fragment'
+              }
             }
-          }
-        ]
+          ]
+        }
       },
       content: 'There is some problem.'
     }]);
@@ -252,15 +264,18 @@ describe('Creating element IDs', () => {
             }
           ]
         },
-        links: [
-          {
-            element: 'link',
-            content: {
-              href: 'warning',
-              relation: 'uri-fragment'
+        links: {
+          element: 'array',
+          content: [
+            {
+              element: 'link',
+              content: {
+                href: 'warning',
+                relation: 'uri-fragment'
+              }
             }
-          }
-        ]
+          ]
+        }
       },
       content: 'There is some problem.'
     }]);
@@ -287,15 +302,18 @@ describe('Creating element IDs', () => {
           element: 'string',
           content: 'exampleID'
         },
-        links: [
-          {
-            element: 'link',
-            content: {
-              href: 'exampleid',
-              relation: 'uri-fragment'
+        links: {
+          element: 'array',
+          content: [
+            {
+              element: 'link',
+              content: {
+                href: 'exampleid',
+                relation: 'uri-fragment'
+              }
             }
-          }
-        ]
+          ]
+        }
       },
       content: 'There is some problem.'
     }]);

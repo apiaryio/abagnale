@@ -6,15 +6,18 @@
         "element": "string",
         "content": "Hello World"
       },
-      "links": [
-        {
-          "element": "link",
-          "content": {
-            "relation": "uri-fragment",
-            "href": "hello-world"
+      "links": {
+        "element": "array",
+        "content": [
+          {
+            "element": "link",
+            "content": {
+              "relation": "uri-fragment",
+              "href": "hello-world"
+            }
           }
-        }
-      ]
+        ]
+      }
     }
   }
 ]

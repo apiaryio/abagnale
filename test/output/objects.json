@@ -13,15 +13,18 @@
                 "element": "string",
                 "content": "object.name-key"
               },
-              "links": [
-                {
-                  "element": "link",
-                  "content": {
-                    "relation": "uri-fragment",
-                    "href": "object/name-key"
+              "links": {
+                "element": "array",
+                "content": [
+                  {
+                    "element": "link",
+                    "content": {
+                      "relation": "uri-fragment",
+                      "href": "object/name-key"
+                    }
                   }
-                }
-              ]
+                ]
+              }
             }
           },
           "value": {
@@ -31,15 +34,18 @@
                 "element": "string",
                 "content": "object.name"
               },
-              "links": [
-                {
-                  "element": "link",
-                  "content": {
-                    "relation": "uri-fragment",
-                    "href": "object/name"
+              "links": {
+                "element": "array",
+                "content": [
+                  {
+                    "element": "link",
+                    "content": {
+                      "relation": "uri-fragment",
+                      "href": "object/name"
+                    }
                   }
-                }
-              ]
+                ]
+              }
             }
           }
         },
@@ -48,15 +54,18 @@
             "element": "string",
             "content": "object.name-member"
           },
-          "links": [
-            {
-              "element": "link",
-              "content": {
-                "relation": "uri-fragment",
-                "href": "object/name-member"
+          "links": {
+            "element": "array",
+            "content": [
+              {
+                "element": "link",
+                "content": {
+                  "relation": "uri-fragment",
+                  "href": "object/name-member"
+                }
               }
-            }
-          ]
+            ]
+          }
         }
       },
       {
@@ -70,15 +79,18 @@
                 "element": "string",
                 "content": "object.tags-key"
               },
-              "links": [
-                {
-                  "element": "link",
-                  "content": {
-                    "relation": "uri-fragment",
-                    "href": "object/tags-key"
+              "links": {
+                "element": "array",
+                "content": [
+                  {
+                    "element": "link",
+                    "content": {
+                      "relation": "uri-fragment",
+                      "href": "object/tags-key"
+                    }
                   }
-                }
-              ]
+                ]
+              }
             }
           },
           "value": {
@@ -98,15 +110,18 @@
                             "element": "string",
                             "content": "object.tags.0.name-key"
                           },
-                          "links": [
-                            {
-                              "element": "link",
-                              "content": {
-                                "relation": "uri-fragment",
-                                "href": "object/tags/0/name-key"
+                          "links": {
+                            "element": "array",
+                            "content": [
+                              {
+                                "element": "link",
+                                "content": {
+                                  "relation": "uri-fragment",
+                                  "href": "object/tags/0/name-key"
+                                }
                               }
-                            }
-                          ]
+                            ]
+                          }
                         }
                       },
                       "value": {
@@ -116,15 +131,18 @@
                             "element": "string",
                             "content": "object.tags.0.name"
                           },
-                          "links": [
-                            {
-                              "element": "link",
-                              "content": {
-                                "relation": "uri-fragment",
-                                "href": "object/tags/0/name"
+                          "links": {
+                            "element": "array",
+                            "content": [
+                              {
+                                "element": "link",
+                                "content": {
+                                  "relation": "uri-fragment",
+                                  "href": "object/tags/0/name"
+                                }
                               }
-                            }
-                          ]
+                            ]
+                          }
                         }
                       }
                     },
@@ -133,15 +151,18 @@
                         "element": "string",
                         "content": "object.tags.0.name-member"
                       },
-                      "links": [
-                        {
-                          "element": "link",
-                          "content": {
-                            "relation": "uri-fragment",
-                            "href": "object/tags/0/name-member"
+                      "links": {
+                        "element": "array",
+                        "content": [
+                          {
+                            "element": "link",
+                            "content": {
+                              "relation": "uri-fragment",
+                              "href": "object/tags/0/name-member"
+                            }
                           }
-                        }
-                      ]
+                        ]
+                      }
                     }
                   },
                   {
@@ -155,15 +176,18 @@
                             "element": "string",
                             "content": "object.tags.0.count-key"
                           },
-                          "links": [
-                            {
-                              "element": "link",
-                              "content": {
-                                "relation": "uri-fragment",
-                                "href": "object/tags/0/count-key"
+                          "links": {
+                            "element": "array",
+                            "content": [
+                              {
+                                "element": "link",
+                                "content": {
+                                  "relation": "uri-fragment",
+                                  "href": "object/tags/0/count-key"
+                                }
                               }
-                            }
-                          ]
+                            ]
+                          }
                         }
                       },
                       "value": {
@@ -173,15 +197,18 @@
                             "element": "string",
                             "content": "object.tags.0.count"
                           },
-                          "links": [
-                            {
-                              "element": "link",
-                              "content": {
-                                "relation": "uri-fragment",
-                                "href": "object/tags/0/count"
+                          "links": {
+                            "element": "array",
+                            "content": [
+                              {
+                                "element": "link",
+                                "content": {
+                                  "relation": "uri-fragment",
+                                  "href": "object/tags/0/count"
+                                }
                               }
-                            }
-                          ]
+                            ]
+                          }
                         }
                       }
                     },
@@ -190,15 +217,18 @@
                         "element": "string",
                         "content": "object.tags.0.count-member"
                       },
-                      "links": [
-                        {
-                          "element": "link",
-                          "content": {
-                            "relation": "uri-fragment",
-                            "href": "object/tags/0/count-member"
+                      "links": {
+                        "element": "array",
+                        "content": [
+                          {
+                            "element": "link",
+                            "content": {
+                              "relation": "uri-fragment",
+                              "href": "object/tags/0/count-member"
+                            }
                           }
-                        }
-                      ]
+                        ]
+                      }
                     }
                   }
                 ],
@@ -207,15 +237,18 @@
                     "element": "string",
                     "content": "object.tags.0"
                   },
-                  "links": [
-                    {
-                      "element": "link",
-                      "content": {
-                        "relation": "uri-fragment",
-                        "href": "object/tags/0"
+                  "links": {
+                    "element": "array",
+                    "content": [
+                      {
+                        "element": "link",
+                        "content": {
+                          "relation": "uri-fragment",
+                          "href": "object/tags/0"
+                        }
                       }
-                    }
-                  ]
+                    ]
+                  }
                 }
               }
             ],
@@ -224,15 +257,18 @@
                 "element": "string",
                 "content": "object.tags"
               },
-              "links": [
-                {
-                  "element": "link",
-                  "content": {
-                    "relation": "uri-fragment",
-                    "href": "object/tags"
+              "links": {
+                "element": "array",
+                "content": [
+                  {
+                    "element": "link",
+                    "content": {
+                      "relation": "uri-fragment",
+                      "href": "object/tags"
+                    }
                   }
-                }
-              ]
+                ]
+              }
             }
           }
         },
@@ -241,15 +277,18 @@
             "element": "string",
             "content": "object.tags-member"
           },
-          "links": [
-            {
-              "element": "link",
-              "content": {
-                "relation": "uri-fragment",
-                "href": "object/tags-member"
+          "links": {
+            "element": "array",
+            "content": [
+              {
+                "element": "link",
+                "content": {
+                  "relation": "uri-fragment",
+                  "href": "object/tags-member"
+                }
               }
-            }
-          ]
+            ]
+          }
         }
       }
     ],
@@ -258,15 +297,18 @@
         "element": "string",
         "content": "object"
       },
-      "links": [
-        {
-          "element": "link",
-          "content": {
-            "relation": "uri-fragment",
-            "href": "object"
+      "links": {
+        "element": "array",
+        "content": [
+          {
+            "element": "link",
+            "content": {
+              "relation": "uri-fragment",
+              "href": "object"
+            }
           }
-        }
-      ]
+        ]
+      }
     }
   }
 ]

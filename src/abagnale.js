@@ -156,7 +156,9 @@ class Abagnale {
     refract.meta.id = this.idElementForElement(path, refract);
 
     if (!refract.meta.links) {
-      refract.meta.links = [];
+      refract.meta.links = {
+        element: 'array'
+      };
     }
 
     if (refract.meta.id && refract.meta.id.content && refract.meta.id.content.split) {

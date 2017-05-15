@@ -6,6 +6,8 @@
 - Element IDs will *always* be Refracted elements.
 - Any meta or attributes attached to existing element IDs will no longer be removed.
 - Adds support for elements which have existing links meta values that are array elements.
+- Produced links meta will now *always* be an Array Element instead of direct
+  array.
 
 # 1.1.3 - 2017-03-17
 

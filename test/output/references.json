@@ -2,16 +2,22 @@
   {
     "element": "object",
     "meta": {
-      "id": "MyObject",
-      "links": [
-        {
-          "element": "link",
-          "content": {
-            "relation": "uri-fragment",
-            "href": "myobject"
+      "id": {
+        "element": "string",
+        "content": "MyObject"
+      },
+      "links": {
+        "element": "array",
+        "content": [
+          {
+            "element": "link",
+            "attributes": {
+              "relation": "uri-fragment",
+              "href": "myobject"
+            }
           }
-        }
-      ]
+        ]
+      }
     },
     "content": [
       {
@@ -21,45 +27,63 @@
             "element": "string",
             "content": "name",
             "meta": {
-              "id": "MyObject.name-key",
-              "links": [
-                {
-                  "element": "link",
-                  "content": {
-                    "relation": "uri-fragment",
-                    "href": "myobject/name-key"
+              "id": {
+                "element": "string",
+                "content": "MyObject.name-key"
+              },
+              "links": {
+                "element": "array",
+                "content": [
+                  {
+                    "element": "link",
+                    "attributes": {
+                      "relation": "uri-fragment",
+                      "href": "myobject/name-key"
+                    }
                   }
-                }
-              ]
+                ]
+              }
             }
           },
           "value": {
             "element": "SpecialString",
             "meta": {
-              "id": "MyObject.name",
-              "links": [
-                {
-                  "element": "link",
-                  "content": {
-                    "relation": "uri-fragment",
-                    "href": "myobject/name"
+              "id": {
+                "element": "string",
+                "content": "MyObject.name"
+              },
+              "links": {
+                "element": "array",
+                "content": [
+                  {
+                    "element": "link",
+                    "attributes": {
+                      "relation": "uri-fragment",
+                      "href": "myobject/name"
+                    }
                   }
-                }
-              ]
+                ]
+              }
             }
           }
         },
         "meta": {
-          "id": "MyObject.name-member",
-          "links": [
-            {
-              "element": "link",
-              "content": {
-                "relation": "uri-fragment",
-                "href": "myobject/name-member"
+          "id": {
+            "element": "string",
+            "content": "MyObject.name-member"
+          },
+          "links": {
+            "element": "array",
+            "content": [
+              {
+                "element": "link",
+                "attributes": {
+                  "relation": "uri-fragment",
+                  "href": "myobject/name-member"
+                }
               }
-            }
-          ]
+            ]
+          }
         }
       },
       {
@@ -73,32 +97,44 @@
   {
     "element": "string",
     "meta": {
-      "id": "SpecialString",
-      "links": [
-        {
-          "element": "link",
-          "content": {
-            "relation": "uri-fragment",
-            "href": "specialstring"
+      "id": {
+        "element": "string",
+        "content": "SpecialString"
+      },
+      "links": {
+        "element": "array",
+        "content": [
+          {
+            "element": "link",
+            "attributes": {
+              "relation": "uri-fragment",
+              "href": "specialstring"
+            }
           }
-        }
-      ]
+        ]
+      }
     },
     "content": "I am special"
   },
   {
     "element": "object",
     "meta": {
-      "id": "IncludedObject",
-      "links": [
-        {
-          "element": "link",
-          "content": {
-            "relation": "uri-fragment",
-            "href": "includedobject"
+      "id": {
+        "element": "string",
+        "content": "IncludedObject"
+      },
+      "links": {
+        "element": "array",
+        "content": [
+          {
+            "element": "link",
+            "attributes": {
+              "relation": "uri-fragment",
+              "href": "includedobject"
+            }
           }
-        }
-      ]
+        ]
+      }
     },
     "content": [
       {
@@ -108,45 +144,63 @@
             "element": "string",
             "content": "address",
             "meta": {
-              "id": "IncludedObject.address-key",
-              "links": [
-                {
-                  "element": "link",
-                  "content": {
-                    "relation": "uri-fragment",
-                    "href": "includedobject/address-key"
+              "id": {
+                "element": "string",
+                "content": "IncludedObject.address-key"
+              },
+              "links": {
+                "element": "array",
+                "content": [
+                  {
+                    "element": "link",
+                    "attributes": {
+                      "relation": "uri-fragment",
+                      "href": "includedobject/address-key"
+                    }
                   }
-                }
-              ]
+                ]
+              }
             }
           },
           "value": {
             "element": "string",
             "meta": {
-              "id": "IncludedObject.address",
-              "links": [
-                {
-                  "element": "link",
-                  "content": {
-                    "relation": "uri-fragment",
-                    "href": "includedobject/address"
+              "id": {
+                "element": "string",
+                "content": "IncludedObject.address"
+              },
+              "links": {
+                "element": "array",
+                "content": [
+                  {
+                    "element": "link",
+                    "attributes": {
+                      "relation": "uri-fragment",
+                      "href": "includedobject/address"
+                    }
                   }
-                }
-              ]
+                ]
+              }
             }
           }
         },
         "meta": {
-          "id": "IncludedObject.address-member",
-          "links": [
-            {
-              "element": "link",
-              "content": {
-                "relation": "uri-fragment",
-                "href": "includedobject/address-member"
+          "id": {
+            "element": "string",
+            "content": "IncludedObject.address-member"
+          },
+          "links": {
+            "element": "array",
+            "content": [
+              {
+                "element": "link",
+                "attributes": {
+                  "relation": "uri-fragment",
+                  "href": "includedobject/address-member"
+                }
               }
-            }
-          ]
+            ]
+          }
         }
       }
     ]

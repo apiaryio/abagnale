@@ -6,16 +6,22 @@
         "api"
       ],
       "title": "My API",
-      "id": "api",
-      "links": [
-        {
-          "element": "link",
-          "content": {
-            "relation": "uri-fragment",
-            "href": "api"
+      "id": {
+        "element": "string",
+        "content": "api"
+      },
+      "links": {
+        "element": "array",
+        "content": [
+          {
+            "element": "link",
+            "attributes": {
+              "relation": "uri-fragment",
+              "href": "api"
+            }
           }
-        }
-      ]
+        ]
+      }
     },
     "attributes": {
       "meta": [
@@ -47,32 +53,44 @@
             "resourceGroup"
           ],
           "title": "",
-          "id": "api.resourcegroup",
-          "links": [
-            {
-              "element": "link",
-              "content": {
-                "relation": "uri-fragment",
-                "href": "api/resourcegroup"
+          "id": {
+            "element": "string",
+            "content": "api.resourcegroup"
+          },
+          "links": {
+            "element": "array",
+            "content": [
+              {
+                "element": "link",
+                "attributes": {
+                  "relation": "uri-fragment",
+                  "href": "api/resourcegroup"
+                }
               }
-            }
-          ]
+            ]
+          }
         },
         "content": [
           {
             "element": "resource",
             "meta": {
               "title": "Frob",
-              "id": "api.resourcegroup.frob",
-              "links": [
-                {
-                  "element": "link",
-                  "content": {
-                    "relation": "uri-fragment",
-                    "href": "api/resourcegroup/frob"
+              "id": {
+                "element": "string",
+                "content": "api.resourcegroup.frob"
+              },
+              "links": {
+                "element": "array",
+                "content": [
+                  {
+                    "element": "link",
+                    "attributes": {
+                      "relation": "uri-fragment",
+                      "href": "api/resourcegroup/frob"
+                    }
                   }
-                }
-              ]
+                ]
+              }
             },
             "attributes": {
               "href": "/frobs"
@@ -82,16 +100,22 @@
                 "element": "transition",
                 "meta": {
                   "title": "Get a frob",
-                  "id": "api.resourcegroup.frob.get-a-frob",
-                  "links": [
-                    {
-                      "element": "link",
-                      "content": {
-                        "relation": "uri-fragment",
-                        "href": "api/resourcegroup/frob/get-a-frob"
+                  "id": {
+                    "element": "string",
+                    "content": "api.resourcegroup.frob.get-a-frob"
+                  },
+                  "links": {
+                    "element": "array",
+                    "content": [
+                      {
+                        "element": "link",
+                        "attributes": {
+                          "relation": "uri-fragment",
+                          "href": "api/resourcegroup/frob/get-a-frob"
+                        }
                       }
-                    }
-                  ]
+                    ]
+                  }
                 },
                 "content": [
                   {
@@ -104,16 +128,22 @@
                         },
                         "content": [],
                         "meta": {
-                          "id": "api.resourcegroup.frob.get-a-frob.httptransaction.httprequest",
-                          "links": [
-                            {
-                              "element": "link",
-                              "content": {
-                                "relation": "uri-fragment",
-                                "href": "api/resourcegroup/frob/get-a-frob/httptransaction/httprequest"
+                          "id": {
+                            "element": "string",
+                            "content": "api.resourcegroup.frob.get-a-frob.httptransaction.httprequest"
+                          },
+                          "links": {
+                            "element": "array",
+                            "content": [
+                              {
+                                "element": "link",
+                                "attributes": {
+                                  "relation": "uri-fragment",
+                                  "href": "api/resourcegroup/frob/get-a-frob/httptransaction/httprequest"
+                                }
                               }
-                            }
-                          ]
+                            ]
+                          }
                         }
                       },
                       {
@@ -135,74 +165,104 @@
                                         "element": "string",
                                         "content": "id",
                                         "meta": {
-                                          "id": "api.resourcegroup.frob.get-a-frob.httptransaction.httpresponse.datastructure.0.id-key",
-                                          "links": [
-                                            {
-                                              "element": "link",
-                                              "content": {
-                                                "relation": "uri-fragment",
-                                                "href": "api/resourcegroup/frob/get-a-frob/httptransaction/httpresponse/datastructure/0/id-key"
+                                          "id": {
+                                            "element": "string",
+                                            "content": "api.resourcegroup.frob.get-a-frob.httptransaction.httpresponse.datastructure.0.id-key"
+                                          },
+                                          "links": {
+                                            "element": "array",
+                                            "content": [
+                                              {
+                                                "element": "link",
+                                                "attributes": {
+                                                  "relation": "uri-fragment",
+                                                  "href": "api/resourcegroup/frob/get-a-frob/httptransaction/httpresponse/datastructure/0/id-key"
+                                                }
                                               }
-                                            }
-                                          ]
+                                            ]
+                                          }
                                         }
                                       },
                                       "value": {
                                         "element": "string",
                                         "content": "123",
                                         "meta": {
-                                          "id": "api.resourcegroup.frob.get-a-frob.httptransaction.httpresponse.datastructure.0.id",
-                                          "links": [
-                                            {
-                                              "element": "link",
-                                              "content": {
-                                                "relation": "uri-fragment",
-                                                "href": "api/resourcegroup/frob/get-a-frob/httptransaction/httpresponse/datastructure/0/id"
+                                          "id": {
+                                            "element": "string",
+                                            "content": "api.resourcegroup.frob.get-a-frob.httptransaction.httpresponse.datastructure.0.id"
+                                          },
+                                          "links": {
+                                            "element": "array",
+                                            "content": [
+                                              {
+                                                "element": "link",
+                                                "attributes": {
+                                                  "relation": "uri-fragment",
+                                                  "href": "api/resourcegroup/frob/get-a-frob/httptransaction/httpresponse/datastructure/0/id"
+                                                }
                                               }
-                                            }
-                                          ]
+                                            ]
+                                          }
                                         }
                                       }
                                     },
                                     "meta": {
-                                      "id": "api.resourcegroup.frob.get-a-frob.httptransaction.httpresponse.datastructure.0.id-member",
-                                      "links": [
-                                        {
-                                          "element": "link",
-                                          "content": {
-                                            "relation": "uri-fragment",
-                                            "href": "api/resourcegroup/frob/get-a-frob/httptransaction/httpresponse/datastructure/0/id-member"
+                                      "id": {
+                                        "element": "string",
+                                        "content": "api.resourcegroup.frob.get-a-frob.httptransaction.httpresponse.datastructure.0.id-member"
+                                      },
+                                      "links": {
+                                        "element": "array",
+                                        "content": [
+                                          {
+                                            "element": "link",
+                                            "attributes": {
+                                              "relation": "uri-fragment",
+                                              "href": "api/resourcegroup/frob/get-a-frob/httptransaction/httpresponse/datastructure/0/id-member"
+                                            }
                                           }
-                                        }
-                                      ]
+                                        ]
+                                      }
                                     }
                                   }
                                 ],
                                 "meta": {
-                                  "id": "api.resourcegroup.frob.get-a-frob.httptransaction.httpresponse.datastructure.0",
-                                  "links": [
-                                    {
-                                      "element": "link",
-                                      "content": {
-                                        "relation": "uri-fragment",
-                                        "href": "api/resourcegroup/frob/get-a-frob/httptransaction/httpresponse/datastructure/0"
+                                  "id": {
+                                    "element": "string",
+                                    "content": "api.resourcegroup.frob.get-a-frob.httptransaction.httpresponse.datastructure.0"
+                                  },
+                                  "links": {
+                                    "element": "array",
+                                    "content": [
+                                      {
+                                        "element": "link",
+                                        "attributes": {
+                                          "relation": "uri-fragment",
+                                          "href": "api/resourcegroup/frob/get-a-frob/httptransaction/httpresponse/datastructure/0"
+                                        }
                                       }
-                                    }
-                                  ]
+                                    ]
+                                  }
                                 }
                               }
                             ],
                             "meta": {
-                              "id": "api.resourcegroup.frob.get-a-frob.httptransaction.httpresponse.datastructure",
-                              "links": [
-                                {
-                                  "element": "link",
-                                  "content": {
-                                    "relation": "uri-fragment",
-                                    "href": "api/resourcegroup/frob/get-a-frob/httptransaction/httpresponse/datastructure"
+                              "id": {
+                                "element": "string",
+                                "content": "api.resourcegroup.frob.get-a-frob.httptransaction.httpresponse.datastructure"
+                              },
+                              "links": {
+                                "element": "array",
+                                "content": [
+                                  {
+                                    "element": "link",
+                                    "attributes": {
+                                      "relation": "uri-fragment",
+                                      "href": "api/resourcegroup/frob/get-a-frob/httptransaction/httpresponse/datastructure"
+                                    }
                                   }
-                                }
-                              ]
+                                ]
+                              }
                             }
                           },
                           {
@@ -211,45 +271,63 @@
                               "classes": [
                                 "messageBodySchema"
                               ],
-                              "id": "api.resourcegroup.frob.get-a-frob.httptransaction.httpresponse.messagebodyschema",
-                              "links": [
-                                {
-                                  "element": "link",
-                                  "content": {
-                                    "relation": "uri-fragment",
-                                    "href": "api/resourcegroup/frob/get-a-frob/httptransaction/httpresponse/messagebodyschema"
+                              "id": {
+                                "element": "string",
+                                "content": "api.resourcegroup.frob.get-a-frob.httptransaction.httpresponse.messagebodyschema"
+                              },
+                              "links": {
+                                "element": "array",
+                                "content": [
+                                  {
+                                    "element": "link",
+                                    "attributes": {
+                                      "relation": "uri-fragment",
+                                      "href": "api/resourcegroup/frob/get-a-frob/httptransaction/httpresponse/messagebodyschema"
+                                    }
                                   }
-                                }
-                              ]
+                                ]
+                              }
                             },
                             "content": "{\n  \"$schema\": \"http://json-schema.org/draft-04/schema#\",\n  \"type\": \"object\",\n  \"properties\": {\n    \"id\": {\n      \"type\": \"string\"\n    }\n  }\n}"
                           }
                         ],
                         "meta": {
-                          "id": "api.resourcegroup.frob.get-a-frob.httptransaction.httpresponse",
-                          "links": [
-                            {
-                              "element": "link",
-                              "content": {
-                                "relation": "uri-fragment",
-                                "href": "api/resourcegroup/frob/get-a-frob/httptransaction/httpresponse"
+                          "id": {
+                            "element": "string",
+                            "content": "api.resourcegroup.frob.get-a-frob.httptransaction.httpresponse"
+                          },
+                          "links": {
+                            "element": "array",
+                            "content": [
+                              {
+                                "element": "link",
+                                "attributes": {
+                                  "relation": "uri-fragment",
+                                  "href": "api/resourcegroup/frob/get-a-frob/httptransaction/httpresponse"
+                                }
                               }
-                            }
-                          ]
+                            ]
+                          }
                         }
                       }
                     ],
                     "meta": {
-                      "id": "api.resourcegroup.frob.get-a-frob.httptransaction",
-                      "links": [
-                        {
-                          "element": "link",
-                          "content": {
-                            "relation": "uri-fragment",
-                            "href": "api/resourcegroup/frob/get-a-frob/httptransaction"
+                      "id": {
+                        "element": "string",
+                        "content": "api.resourcegroup.frob.get-a-frob.httptransaction"
+                      },
+                      "links": {
+                        "element": "array",
+                        "content": [
+                          {
+                            "element": "link",
+                            "attributes": {
+                              "relation": "uri-fragment",
+                              "href": "api/resourcegroup/frob/get-a-frob/httptransaction"
+                            }
                           }
-                        }
-                      ]
+                        ]
+                      }
                     }
                   }
                 ]

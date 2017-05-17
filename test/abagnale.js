@@ -71,6 +71,363 @@ describe('Bad refract input data', () => {
   });
 });
 
+describe('Creating element IDs', () => {
+  it('should leave existing unrefracted ID unmodified', () => {
+    const input = [{
+      element: 'annotation',
+      meta: {
+        id: 'exampleID',
+      },
+      content: 'There is some problem.',
+    }];
+
+    const output = abagnale.forge(input);
+
+    assert.deepEqual(output, [{
+      element: 'annotation',
+      meta: {
+        id: {
+          element: 'string',
+          content: 'exampleID',
+        },
+        links: {
+          element: 'array',
+          content: [
+            {
+              element: 'link',
+              attributes: {
+                href: 'exampleid',
+                relation: 'uri-fragment',
+              },
+            },
+          ],
+        },
+      },
+      content: 'There is some problem.',
+    }]);
+  });
+
+  it('should leave existing refracted ID unmodified', () => {
+    const input = [{
+      element: 'annotation',
+      meta: {
+        id: {
+          element: 'string',
+          attributes: {
+            attr: {
+              element: 'string',
+              content: 'Example',
+            },
+          },
+          content: 'exampleID',
+        },
+      },
+      content: 'There is some problem.',
+    }];
+
+    const output = abagnale.forge(input);
+
+    assert.deepEqual(output, [{
+      element: 'annotation',
+      meta: {
+        id: {
+          element: 'string',
+          attributes: {
+            attr: {
+              element: 'string',
+              content: 'Example',
+            },
+          },
+          content: 'exampleID',
+        },
+        links: {
+          element: 'array',
+          content: [
+            {
+              element: 'link',
+              attributes: {
+                href: 'exampleid',
+                relation: 'uri-fragment',
+              },
+            },
+          ],
+        },
+      },
+      content: 'There is some problem.',
+    }]);
+  });
+
+  it('should generate ID from element name', () => {
+    const input = [{
+      element: 'annotation',
+      content: 'There is some problem.',
+    }];
+
+    const output = abagnale.forge(input);
+
+    assert.deepEqual(output, [{
+      element: 'annotation',
+      meta: {
+        id: {
+          element: 'string',
+          content: 'annotation',
+        },
+        links: {
+          element: 'array',
+          content: [
+            {
+              element: 'link',
+              attributes: {
+                href: 'annotation',
+                relation: 'uri-fragment',
+              },
+            },
+          ],
+        },
+      },
+      content: 'There is some problem.',
+    }]);
+  });
+
+  it('should generate ID from first unrefracted class', () => {
+    const input = [{
+      element: 'annotation',
+      meta: {
+        classes: [
+          'warning',
+        ],
+      },
+      content: 'There is some problem.',
+    }];
+
+    const output = abagnale.forge(input);
+
+    assert.deepEqual(output, [{
+      element: 'annotation',
+      meta: {
+        id: {
+          element: 'string',
+          content: 'warning',
+        },
+        classes: [
+          'warning',
+        ],
+        links: {
+          element: 'array',
+          content: [
+            {
+              element: 'link',
+              attributes: {
+                href: 'warning',
+                relation: 'uri-fragment',
+              },
+            },
+          ],
+        },
+      },
+      content: 'There is some problem.',
+    }]);
+  });
+
+  it('should generate ID from first refracted class', () => {
+    const input = [{
+      element: 'annotation',
+      meta: {
+        classes: {
+          element: 'array',
+          content: [
+            {
+              element: 'string',
+              content: 'warning',
+            },
+          ],
+        },
+      },
+      content: 'There is some problem.',
+    }];
+
+    const output = abagnale.forge(input);
+
+    assert.deepEqual(output, [{
+      element: 'annotation',
+      meta: {
+        id: {
+          element: 'string',
+          content: 'warning',
+        },
+        classes: {
+          element: 'array',
+          content: [
+            {
+              element: 'string',
+              content: 'warning',
+            },
+          ],
+        },
+        links: {
+          element: 'array',
+          content: [
+            {
+              element: 'link',
+              attributes: {
+                href: 'warning',
+                relation: 'uri-fragment',
+              },
+            },
+          ],
+        },
+      },
+      content: 'There is some problem.',
+    }]);
+  });
+
+  it('should add link elements for ID', () => {
+    const input = [{
+      element: 'annotation',
+      meta: {
+        id: {
+          element: 'string',
+          content: 'exampleID',
+        },
+      },
+      content: 'There is some problem.',
+    }];
+
+    const output = abagnale.forge(input);
+
+    assert.deepEqual(output, [{
+      element: 'annotation',
+      meta: {
+        id: {
+          element: 'string',
+          content: 'exampleID',
+        },
+        links: {
+          element: 'array',
+          content: [
+            {
+              element: 'link',
+              attributes: {
+                href: 'exampleid',
+                relation: 'uri-fragment',
+              },
+            },
+          ],
+        },
+      },
+      content: 'There is some problem.',
+    }]);
+  });
+
+  it('should append link element to existing link elements for ID', () => {
+    const input = [{
+      element: 'annotation',
+      meta: {
+        id: {
+          element: 'string',
+          content: 'exampleID',
+        },
+        links: [
+          {
+            element: 'link',
+            attributes: {
+              relation: 'profile',
+              href: 'https://example.com/annotation',
+            },
+          },
+        ],
+      },
+      content: 'There is some problem.',
+    }];
+
+    const output = abagnale.forge(input);
+
+    assert.deepEqual(output, [{
+      element: 'annotation',
+      meta: {
+        id: {
+          element: 'string',
+          content: 'exampleID',
+        },
+        links: [
+          {
+            element: 'link',
+            attributes: {
+              relation: 'profile',
+              href: 'https://example.com/annotation',
+            },
+          },
+          {
+            element: 'link',
+            attributes: {
+              href: 'exampleid',
+              relation: 'uri-fragment',
+            },
+          },
+        ],
+      },
+      content: 'There is some problem.',
+    }]);
+  });
+
+  it('should append link element to existing link elements array element for ID', () => {
+    const input = [{
+      element: 'annotation',
+      meta: {
+        id: {
+          element: 'string',
+          content: 'exampleID',
+        },
+        links: {
+          element: 'array',
+          content: [
+            {
+              element: 'link',
+              attributes: {
+                relation: 'profile',
+                href: 'https://example.com/annotation',
+              },
+            },
+          ],
+        },
+      },
+      content: 'There is some problem.',
+    }];
+
+    const output = abagnale.forge(input);
+
+    assert.deepEqual(output, [{
+      element: 'annotation',
+      meta: {
+        id: {
+          element: 'string',
+          content: 'exampleID',
+        },
+        links: {
+          element: 'array',
+          content: [
+            {
+              element: 'link',
+              attributes: {
+                relation: 'profile',
+                href: 'https://example.com/annotation',
+              },
+            },
+            {
+              element: 'link',
+              attributes: {
+                href: 'exampleid',
+                relation: 'uri-fragment',
+              },
+            },
+          ],
+        },
+      },
+      content: 'There is some problem.',
+    }]);
+  });
+});
+
 describe('Test fixtures match expected output', () => {
   glob.sync('./test/input/*.json').forEach((filename) => {
     it(path.basename(filename, '.json'), () => {

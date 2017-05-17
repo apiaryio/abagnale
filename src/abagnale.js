@@ -93,22 +93,38 @@ class Abagnale {
   /*
     Get an ID for an element, based on the current path, any existing ID,
     and any element class name. An existing ID will trump other values and
-    resets the path. Returns the unique ID to use.
+    resets the path. Returns the unique ID element to use.
   */
-  idForElement(path, refract) {
+  idElementForElement(path, refract) {
     let newPath = path;
 
     if (refract.meta) {
       if (refract.meta.id) {
         if (typeof refract.meta.id === 'object') {
-          newPath = [refract.meta.id.content];
-        } else {
-          newPath = [refract.meta.id];
+          this.getUnique(refract.meta.id.content);
+          return refract.meta.id;
         }
-      } else if (path.length === 0 && refract.meta.classes &&
-                 refract.meta.classes.length === 1) {
-        // This is the first item, and it has a class name, so we use that.
-        newPath = [refract.meta.classes[0]];
+
+        this.getUnique(refract.meta.id);
+
+        return {
+          element: 'string',
+          content: refract.meta.id,
+        };
+      } else if (path.length === 0 && refract.meta.classes) {
+        const classes = refract.meta.classes;
+
+        if (classes.content && classes.content.length === 1) {
+          const klass = classes.content[0];
+
+          if (klass.element) {
+            newPath = [refract.meta.classes.content[0].content];
+          } else {
+            newPath = [refract.meta.classes.content[0]];
+          }
+        } else if (classes.element === undefined && classes.length === 1) {
+          newPath = [refract.meta.classes[0]];
+        }
       }
     }
 
@@ -118,7 +134,12 @@ class Abagnale {
       id = refract.element;
     }
 
-    return this.getUnique(id);
+    const uniqueId = this.getUnique(id);
+
+    return {
+      element: 'string',
+      content: uniqueId,
+    };
   }
 
   /*
@@ -133,22 +154,34 @@ class Abagnale {
       refract.meta = {};
     }
 
-    refract.meta.id = this.idForElement(path, refract);
+    refract.meta.id = this.idElementForElement(path, refract);
 
     if (!refract.meta.links) {
-      refract.meta.links = [];
+      refract.meta.links = {
+        element: 'array',
+      };
     }
 
-    if (refract.meta.id && refract.meta.id.split) {
-      refract.meta.links.push({
+    if (refract.meta.id && refract.meta.id.content && refract.meta.id.content.split) {
+      const link = {
         element: 'link',
-        content: {
+        attributes: {
           relation: 'uri-fragment',
-          href: refract.meta.id.split(this.options.separator)
+          href: refract.meta.id.content.split(this.options.separator)
                                .map((item) => safeSlug(item))
                                .join(this.options.uriSeparator),
         },
-      });
+      };
+
+      if (refract.meta.links.element !== undefined) {
+        if (!refract.meta.links.content) {
+          refract.meta.links.content = [];
+        }
+
+        refract.meta.links.content.push(link);
+      } else {
+        refract.meta.links.push(link);
+      }
     }
 
     // Array like content containing elements?
@@ -156,7 +189,7 @@ class Abagnale {
       for (let i = 0; i < refract.content.length; i++) {
         const item = refract.content[i];
         const key = this.keyForArray(i, item);
-        const newPath = [refract.meta.id, key].join(this.options.separator);
+        const newPath = [refract.meta.id.content, key].join(this.options.separator);
 
         switch (item.element) {
         case 'ref':

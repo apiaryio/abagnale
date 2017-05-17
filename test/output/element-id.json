@@ -2,16 +2,22 @@
   {
     "element": "string",
     "meta": {
-      "id": "Hello World",
-      "links": [
-        {
-          "element": "link",
-          "content": {
-            "href": "hello-world",
-            "relation": "uri-fragment"
+      "id": {
+        "element": "string",
+        "content": "Hello World"
+      },
+      "links": {
+        "element": "array",
+        "content": [
+          {
+            "element": "link",
+            "attributes": {
+              "relation": "uri-fragment",
+              "href": "hello-world"
+            }
           }
-        }
-      ]
+        ]
+      }
     }
   }
 ]

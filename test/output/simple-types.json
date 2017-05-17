@@ -3,80 +3,110 @@
     "element": "boolean",
     "content": true,
     "meta": {
-      "id": "boolean",
-      "links": [
-        {
-          "element": "link",
-          "content": {
-            "relation": "uri-fragment",
-            "href": "boolean"
+      "id": {
+        "element": "string",
+        "content": "boolean"
+      },
+      "links": {
+        "element": "array",
+        "content": [
+          {
+            "element": "link",
+            "attributes": {
+              "relation": "uri-fragment",
+              "href": "boolean"
+            }
           }
-        }
-      ]
+        ]
+      }
     }
   },
   {
     "element": "string",
     "content": "test",
     "meta": {
-      "id": "string",
-      "links": [
-        {
-          "element": "link",
-          "content": {
-            "relation": "uri-fragment",
-            "href": "string"
+      "id": {
+        "element": "string",
+        "content": "string"
+      },
+      "links": {
+        "element": "array",
+        "content": [
+          {
+            "element": "link",
+            "attributes": {
+              "relation": "uri-fragment",
+              "href": "string"
+            }
           }
-        }
-      ]
+        ]
+      }
     }
   },
   {
     "element": "string",
     "content": "another test",
     "meta": {
-      "id": "string-2",
-      "links": [
-        {
-          "element": "link",
-          "content": {
-            "relation": "uri-fragment",
-            "href": "string-2"
+      "id": {
+        "element": "string",
+        "content": "string-2"
+      },
+      "links": {
+        "element": "array",
+        "content": [
+          {
+            "element": "link",
+            "attributes": {
+              "relation": "uri-fragment",
+              "href": "string-2"
+            }
           }
-        }
-      ]
+        ]
+      }
     }
   },
   {
     "element": "number",
     "content": 123,
     "meta": {
-      "id": "number",
-      "links": [
-        {
-          "element": "link",
-          "content": {
-            "relation": "uri-fragment",
-            "href": "number"
+      "id": {
+        "element": "string",
+        "content": "number"
+      },
+      "links": {
+        "element": "array",
+        "content": [
+          {
+            "element": "link",
+            "attributes": {
+              "relation": "uri-fragment",
+              "href": "number"
+            }
           }
-        }
-      ]
+        ]
+      }
     }
   },
   {
     "element": "number",
     "content": 456,
     "meta": {
-      "id": "number-2",
-      "links": [
-        {
-          "element": "link",
-          "content": {
-            "relation": "uri-fragment",
-            "href": "number-2"
+      "id": {
+        "element": "string",
+        "content": "number-2"
+      },
+      "links": {
+        "element": "array",
+        "content": [
+          {
+            "element": "link",
+            "attributes": {
+              "relation": "uri-fragment",
+              "href": "number-2"
+            }
           }
-        }
-      ]
+        ]
+      }
     }
   }
 ]

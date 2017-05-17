@@ -1,3 +1,18 @@
+# 2.0.0
+
+## Bug Fixes
+
+- Support generating an element ID from a Refracted classes.
+- Element IDs will *always* be Refracted elements.
+- Any meta or attributes attached to existing element IDs will no longer be removed.
+- Adds support for elements which have existing links meta values that are array elements.
+- Produced links meta will now *always* be an Array Element instead of direct
+  array.
+- Link elements are now correctly formed. Previously the `href` and `relation`
+  was incorrectly placed in the elements content as an object.
+  [#9](https://github.com/apiaryio/abagnale/issues/9)
+
+
 # 1.1.3 - 2017-03-17
 
 ## Bug Fixes

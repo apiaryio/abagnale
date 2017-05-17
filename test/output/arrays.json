@@ -5,16 +5,22 @@
       {
         "element": "string",
         "meta": {
-          "id": "array.0",
-          "links": [
-            {
-              "element": "link",
-              "content": {
-                "relation": "uri-fragment",
-                "href": "array/0"
+          "id": {
+            "element": "string",
+            "content": "array.0"
+          },
+          "links": {
+            "element": "array",
+            "content": [
+              {
+                "element": "link",
+                "attributes": {
+                  "relation": "uri-fragment",
+                  "href": "array/0"
+                }
               }
-            }
-          ]
+            ]
+          }
         }
       },
       {
@@ -23,44 +29,62 @@
           {
             "element": "number",
             "meta": {
-              "id": "array.1.0",
-              "links": [
-                {
-                  "element": "link",
-                  "content": {
-                    "relation": "uri-fragment",
-                    "href": "array/1/0"
+              "id": {
+                "element": "string",
+                "content": "array.1.0"
+              },
+              "links": {
+                "element": "array",
+                "content": [
+                  {
+                    "element": "link",
+                    "attributes": {
+                      "relation": "uri-fragment",
+                      "href": "array/1/0"
+                    }
                   }
-                }
-              ]
+                ]
+              }
             }
           }
         ],
         "meta": {
-          "id": "array.1",
-          "links": [
-            {
-              "element": "link",
-              "content": {
-                "relation": "uri-fragment",
-                "href": "array/1"
+          "id": {
+            "element": "string",
+            "content": "array.1"
+          },
+          "links": {
+            "element": "array",
+            "content": [
+              {
+                "element": "link",
+                "attributes": {
+                  "relation": "uri-fragment",
+                  "href": "array/1"
+                }
               }
-            }
-          ]
+            ]
+          }
         }
       }
     ],
     "meta": {
-      "id": "array",
-      "links": [
-        {
-          "element": "link",
-          "content": {
-            "relation": "uri-fragment",
-            "href": "array"
+      "id": {
+        "element": "string",
+        "content": "array"
+      },
+      "links": {
+        "element": "array",
+        "content": [
+          {
+            "element": "link",
+            "attributes": {
+              "relation": "uri-fragment",
+              "href": "array"
+            }
           }
-        }
-      ]
+        ]
+      }
     }
   }
 ]
